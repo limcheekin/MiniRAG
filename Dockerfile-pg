@@ -1,0 +1,51 @@
+# ==========================================
+# Stage 1: Builder
+# ==========================================
+FROM postgres:17.7-trixie AS builder
+
+USER root
+
+# 1. Install build dependencies
+#    Note: We specify postgresql-server-dev-17 explicitly
+#    flex and bison are required for compiling Apache AGE
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    git \
+    ca-certificates \
+    postgresql-server-dev-17 \
+    flex \
+    bison \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp
+
+# 2. Build pgvector (Latest Stable)
+#    Pgvector has fully supported PG17 since v0.7.0
+RUN git clone --depth 1 https://github.com/pgvector/pgvector.git \
+    && cd pgvector \
+    && make \
+    && make install
+
+# 3. Build Apache AGE (PG17 Branch)
+#    Using the specific Release Candidate tag for PG17 support
+RUN git clone --depth 1 --branch PG17/v1.6.0-rc0 https://github.com/apache/age.git \
+    && cd age \
+    && make install
+
+# ==========================================
+# Stage 2: Final Runtime
+# ==========================================
+FROM postgres:17.7-trixie
+
+# Copy compiled extension libraries (.so)
+COPY --from=builder /usr/lib/postgresql/17/lib/vector.so /usr/lib/postgresql/17/lib/
+COPY --from=builder /usr/lib/postgresql/17/lib/age.so /usr/lib/postgresql/17/lib/
+
+# Copy extension definition files (.control and .sql)
+COPY --from=builder /usr/share/postgresql/17/extension/vector* /usr/share/postgresql/17/extension/
+COPY --from=builder /usr/share/postgresql/17/extension/age* /usr/share/postgresql/17/extension/
+
+USER postgres
+
+# Optional: Preload libraries for performance
+CMD ["postgres", "-c", "shared_preload_libraries=age,vector"]
