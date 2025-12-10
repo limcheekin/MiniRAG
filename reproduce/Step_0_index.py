@@ -69,6 +69,25 @@ rag = MiniRAG(
     #llm_model_func=gpt_4o_mini_complete,
     llm_model_max_token_size=200,
     llm_model_name=LLM_MODEL,
+
+    # --- POSTGRES CONFIGURATION START ---
+    # Tell MiniRAG to use the Postgres implementations
+    kv_storage="PGKVStorage", 
+    vector_storage="PGVectorStorage", 
+    graph_storage="PGGraphStorage", 
+    doc_status_storage="PGDocStatusStorage",
+    
+    # Connection credentials matching your Docker command
+    addon_params={
+        "host": "localhost",
+        "port": 5455,           # Matches your docker -p 5455:5432
+        "user": "postgres",     # Matches POSTGRES_USER
+        "password": "postgres", # Matches POSTGRES_PASSWORD
+        "database": "minirag",  # Matches POSTGRES_DB
+        "workspace": "default"  
+    },
+    # --- POSTGRES CONFIGURATION END ---
+    
     embedding_func=EmbeddingFunc(
         embedding_dim=384,
         max_token_size=1000,
