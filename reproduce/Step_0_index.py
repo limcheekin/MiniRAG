@@ -59,6 +59,7 @@ OUTPUT_PATH = args.outputpath
 print("USING LLM:", LLM_MODEL)
 print("USING WORKING DIR:", WORKING_DIR)
 
+os.environ["AGE_GRAPH_NAME"] = "minirag_graph" 
 
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
