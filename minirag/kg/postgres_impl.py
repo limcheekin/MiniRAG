@@ -459,13 +459,15 @@ class PGDocStatusStorage(DocStatusStorage):
         self, status: DocStatus
     ) -> Dict[str, DocProcessingStatus]:
         """Get all documents by status"""
-        sql = "select * from LIGHTRAG_DOC_STATUS where workspace=$1 and status=$1"
+        sql = """select S.*, D.content
+                 from LIGHTRAG_DOC_STATUS S
+                 join LIGHTRAG_DOC_FULL D on S.id = D.id and S.workspace = D.workspace
+                 where S.workspace=$1 and S.status=$2"""
         params = {"workspace": self.db.workspace, "status": status}
         result = await self.db.query(sql, params, True)
-        # Result is like [{'id': 'id1', 'status': 'PENDING', 'updated_at': '2023-07-01 00:00:00'}, {'id': 'id2', 'status': 'PENDING', 'updated_at': '2023-07-01 00:00:00'}, ...]
-        # Converting to be a dict
         return {
             element["id"]: DocProcessingStatus(
+                content=element["content"],
                 content_summary=element["content_summary"],
                 content_length=element["content_length"],
                 status=element["status"],
@@ -515,6 +517,16 @@ class PGDocStatusStorage(DocStatusStorage):
                     "status": v["status"],
                 },
             )
+            if "content" in v:
+                upsert_full_sql = SQL_TEMPLATES["upsert_doc_full"]
+                await self.db.execute(
+                    upsert_full_sql,
+                    {
+                        "id": k,
+                        "content": v["content"],
+                        "workspace": self.db.workspace,
+                    },
+                )
         return data
 
 

@@ -73,7 +73,11 @@ db = PostgreSQLDB(
 )  
   
 # Step 2: Initialize the database connection  
-asyncio.run(db.initdb())  
+# Step 2: Initialize the database connection  
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
+loop.run_until_complete(db.initdb())
+loop.run_until_complete(db.check_tables())  
 
 # Step 3: Create MiniRAG with PostgreSQL storage
 rag = MiniRAG(
