@@ -7,17 +7,15 @@ import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-
-from minirag import MiniRAG
-from minirag.llm import (
-    gpt_4o_mini_complete,
-    hf_model_complete,
-    hf_embed,
+import asyncio  
+from minirag import MiniRAG  
+from minirag.kg.postgres_impl import PostgreSQLDB
+from minirag.llm.openai import (
+    openai_complete,
 )
+from minirag.llm.openai import openai_embed  
 from minirag.utils import EmbeddingFunc
-from transformers import AutoModel, AutoTokenizer
 
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 import argparse
 
@@ -45,9 +43,7 @@ elif args.model == "GLM":
 elif args.model == "MiniCPM":
     LLM_MODEL = "openbmb/MiniCPM3-4B"
 elif args.model == "qwen3-instruct":
-    LLM_MODEL = "Qwen/Qwen3-4B-Instruct-2507"
-elif args.model == "qwen3-thinking":
-    LLM_MODEL = "Qwen/Qwen3-4B-Thinking-2507"    
+    LLM_MODEL = "qwen_qwen3-4b-instruct-2507"
 else:
     print("Invalid model name")
     exit(1)
@@ -64,10 +60,25 @@ os.environ["AGE_GRAPH_NAME"] = "minirag_graph"
 if not os.path.exists(WORKING_DIR):
     os.mkdir(WORKING_DIR)
 
+# Step 1: Create PostgreSQL DB instance  
+db = PostgreSQLDB(  
+    config={  
+        "host": "192.168.1.111",
+        "port": 5455,           # Matches your docker -p 5455:5432
+        "user": "postgres",     # Matches POSTGRES_USER
+        "password": "postgres", # Matches POSTGRES_PASSWORD
+        "database": "minirag",  # Matches POSTGRES_DB
+        "workspace": "default"   
+    }  
+)  
+  
+# Step 2: Initialize the database connection  
+asyncio.run(db.initdb())  
+
+# Step 3: Create MiniRAG with PostgreSQL storage
 rag = MiniRAG(
     working_dir=WORKING_DIR,
-    llm_model_func=hf_model_complete,
-    #llm_model_func=gpt_4o_mini_complete,
+    llm_model_func=openai_complete,
     llm_model_max_token_size=200,
     llm_model_name=LLM_MODEL,
 
@@ -79,27 +90,35 @@ rag = MiniRAG(
     doc_status_storage="PGDocStatusStorage",
     
     # Connection credentials matching your Docker command
-    addon_params={
-        "host": "localhost",
-        "port": 5455,           # Matches your docker -p 5455:5432
-        "user": "postgres",     # Matches POSTGRES_USER
-        "password": "postgres", # Matches POSTGRES_PASSWORD
-        "database": "minirag",  # Matches POSTGRES_DB
-        "workspace": "default"  
-    },
+    #addon_params={
+    #    "host": "192.168.1.111",
+    #    "port": 5455,           # Matches your docker -p 5455:5432
+    #    "user": "postgres",     # Matches POSTGRES_USER
+    #    "password": "postgres", # Matches POSTGRES_PASSWORD
+    #    "database": "minirag",  # Matches POSTGRES_DB
+    #    "workspace": "default"  
+    #},
     # --- POSTGRES CONFIGURATION END ---
     
     embedding_func=EmbeddingFunc(
-        embedding_dim=384,
+        embedding_dim=1024,
         max_token_size=1000,
-        func=lambda texts: hf_embed(
-            texts,
-            tokenizer=AutoTokenizer.from_pretrained(EMBEDDING_MODEL),
-            embed_model=AutoModel.from_pretrained(EMBEDDING_MODEL),
-        ),
+        func=lambda texts: openai_embed(  
+            texts,  
+            model="qwen-embedding-0.6B",
+            base_url="http://192.168.1.111:8886/v1",  
+            api_key="sk-1"  
+        )
+        #func=lambda texts: hf_embed(
+        #    texts,
+        #    tokenizer=AutoTokenizer.from_pretrained(EMBEDDING_MODEL),
+        #    embed_model=AutoModel.from_pretrained(EMBEDDING_MODEL),
+        #),
     ),
 )
 
+# Step 4: Set the database client  
+rag.set_storage_client(db)
 
 # Now indexing
 def find_txt_files(root_path):
