@@ -19,8 +19,6 @@ services:
     volumes:
       # Data persistence
       - postgres_data:/var/lib/postgresql/data
-      # Initialization scripts (automates extension creation)
-      - ./init-scripts:/docker-entrypoint-initdb.d
 
     # Tune for vector performance (Optional but recommended for Production)
     # shared_buffers: ~25% of RAM

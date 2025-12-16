@@ -39,6 +39,12 @@ COPY --from=builder /usr/lib/postgresql/17/lib/age.so /usr/lib/postgresql/17/lib
 COPY --from=builder /usr/share/postgresql/17/extension/vector* /usr/share/postgresql/17/extension/
 COPY --from=builder /usr/share/postgresql/17/extension/age* /usr/share/postgresql/17/extension/
 
+# Copy the init script from your project folder into the image
+COPY init-scripts/01-init-extensions.sh /docker-entrypoint-initdb.d/
+
+# Ensure the script is executable (fixes issues if built on Windows)
+RUN chmod +x /docker-entrypoint-initdb.d/01-init-extensions.sh
+
 # Reset permissions
 USER postgres
 
