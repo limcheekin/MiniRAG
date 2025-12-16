@@ -1,0 +1,59 @@
+# File: docker-compose.yml
+services:
+  minirag-db:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: minirag-postgres
+    restart: unless-stopped
+
+    environment:
+      # These variables are passed to the container AND the init script
+      - POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      - POSTGRES_DB: ${POSTGRES_DB:-minirag}
+      - PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5455:5432"
+
+    volumes:
+      # Data persistence
+      - postgres_data:/var/lib/postgresql/data
+      # Initialization scripts (automates extension creation)
+      - ./init-scripts:/docker-entrypoint-initdb.d
+
+    # Tune for vector performance (Optional but recommended for Production)
+    # shared_buffers: ~25% of RAM
+    # work_mem: Higher for vector index builds (HNSW)
+    command: >
+      postgres 
+      -c shared_preload_libraries=age,vector 
+      -c shared_buffers=1GB 
+      -c work_mem=64MB 
+      -c maintenance_work_mem=512MB
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 4G
+        reservations:
+          memory: 2G
+
+    networks:
+      - minirag_network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  minirag_network:
+    driver: bridge
