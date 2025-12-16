@@ -341,6 +341,17 @@ class PGVectorStorage(BaseVectorStorage):
         }
         return upsert_sql, data
 
+    def _upsert_entities_name(self, item: dict):
+        upsert_sql = SQL_TEMPLATES["upsert_entity_name"]
+        data = {
+            "workspace": self.db.workspace,
+            "id": item["__id__"],
+            "entity_name": item["entity_name"],
+            "content": item["content"],
+            "content_vector": json.dumps(item["__vector__"].tolist()),
+        }
+        return upsert_sql, data
+
     def _upsert_relationships(self, item: dict):
         upsert_sql = SQL_TEMPLATES["upsert_relationship"]
         data = {
@@ -392,6 +403,8 @@ class PGVectorStorage(BaseVectorStorage):
                 upsert_sql, data = self._upsert_chunks(item)
             elif self.namespace == "entities":
                 upsert_sql, data = self._upsert_entities(item)
+            elif self.namespace == "entities_name":
+                upsert_sql, data = self._upsert_entities_name(item)
             elif self.namespace == "relationships":
                 upsert_sql, data = self._upsert_relationships(item)
             else:
@@ -1067,6 +1080,18 @@ TABLES = {
 	                CONSTRAINT LIGHTRAG_VDB_ENTITY_PK PRIMARY KEY (workspace, id)
                     )"""
     },
+    "LIGHTRAG_VDB_ENTITY_NAME": {
+        "ddl": """CREATE TABLE LIGHTRAG_VDB_ENTITY_NAME (
+                    id VARCHAR(255),
+                    workspace VARCHAR(255),
+                    entity_name VARCHAR(255),
+                    content TEXT,
+                    content_vector VECTOR,
+                    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    update_time TIMESTAMP,
+	                CONSTRAINT LIGHTRAG_VDB_ENTITY_NAME_PK PRIMARY KEY (workspace, id)
+                    )"""
+    },
     "LIGHTRAG_VDB_RELATION": {
         "ddl": """CREATE TABLE LIGHTRAG_VDB_RELATION (
                     id VARCHAR(255),
@@ -1166,6 +1191,14 @@ SQL_TEMPLATES = {
                       content_vector=EXCLUDED.content_vector,
                       update_time=CURRENT_TIMESTAMP
                      """,
+    "upsert_entity_name": """INSERT INTO LIGHTRAG_VDB_ENTITY_NAME (workspace, id, entity_name, content, content_vector)
+                      VALUES ($1, $2, $3, $4, $5)
+                      ON CONFLICT (workspace,id) DO UPDATE
+                      SET entity_name=EXCLUDED.entity_name,
+                      content=EXCLUDED.content,
+                      content_vector=EXCLUDED.content_vector,
+                      update_time=CURRENT_TIMESTAMP
+                     """,
     "upsert_relationship": """INSERT INTO LIGHTRAG_VDB_RELATION (workspace, id, source_id,
                       target_id, content, content_vector)
                       VALUES ($1, $2, $3, $4, $5, $6)
@@ -1179,6 +1212,11 @@ SQL_TEMPLATES = {
     "entities": """SELECT entity_name FROM
         (SELECT id, entity_name, 1 - (content_vector <=> '[{embedding_string}]'::vector) as distance
         FROM LIGHTRAG_VDB_ENTITY where workspace=$1)
+        WHERE distance>$2 ORDER BY distance DESC  LIMIT $3
+       """,
+    "entities_name": """SELECT entity_name FROM
+        (SELECT id, entity_name, 1 - (content_vector <=> '[{embedding_string}]'::vector) as distance
+        FROM LIGHTRAG_VDB_ENTITY_NAME where workspace=$1)
         WHERE distance>$2 ORDER BY distance DESC  LIMIT $3
        """,
     "relationships": """SELECT source_id as src_id, target_id as tgt_id FROM

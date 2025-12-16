@@ -330,6 +330,7 @@ class MiniRAG:
             self.chunks_vdb,
             self.relationships_vdb,
             self.entities_vdb,
+            self.entity_name_vdb,
             self.graph_storage_cls,
             self.chunk_entity_relation_graph,
             self.llm_response_cache,
