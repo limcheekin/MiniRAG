@@ -58,6 +58,9 @@ class PostgreSQLDB:
 
     async def initdb(self):
         try:
+            async def init_connection(conn):
+                await PostgreSQLDB._prerequisite(conn, os.environ.get("AGE_GRAPH_NAME", "minirag_graph"))
+
             self.pool = await asyncpg.create_pool(
                 user=self.user,
                 password=self.password,
@@ -66,6 +69,7 @@ class PostgreSQLDB:
                 port=self.port,
                 min_size=1,
                 max_size=self.max,
+                init=init_connection,
             )
 
             logger.info(
@@ -104,8 +108,8 @@ class PostgreSQLDB:
     ) -> Union[dict, None, list[dict]]:
         async with self.pool.acquire() as connection:
             try:
-                if for_age:
-                    await PostgreSQLDB._prerequisite(connection, graph_name)
+                # if for_age:
+                #    await PostgreSQLDB._prerequisite(connection, graph_name)
                 if params:
                     rows = await connection.fetch(sql, *params.values())
                 else:
@@ -140,8 +144,8 @@ class PostgreSQLDB:
     ):
         try:
             async with self.pool.acquire() as connection:
-                if for_age:
-                    await PostgreSQLDB._prerequisite(connection, graph_name)
+                # if for_age:
+                #    await PostgreSQLDB._prerequisite(connection, graph_name)
 
                 if data is None:
                     await connection.execute(sql)
