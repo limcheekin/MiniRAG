@@ -376,6 +376,11 @@ class MiniRAG:
             )
         }
 
+        # Debug logging for investigation
+        processed_docs = await self.doc_status.get_docs_by_status(DocStatus.PROCESSED)
+        logger.info(f"Retrieved {len(processed_docs)} docs with status PROCESSED")
+        logger.info(f"Generated {len(inserting_chunks)} total chunks for entity extraction")
+
         if inserting_chunks:
             logger.info("Performing entity extraction on newly processed chunks")
             await extract_entities(
