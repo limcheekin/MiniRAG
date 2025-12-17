@@ -47,7 +47,7 @@ class PostgreSQLDB:
         self.password = config.get("password", None)
         self.database = config.get("database", "postgres")
         self.workspace = config.get("workspace", "default")
-        self.max = 12
+        self.max = 20
         self.increment = 1
         logger.info(f"Using the label {self.workspace} for PostgreSQL as identifier")
 
