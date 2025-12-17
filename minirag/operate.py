@@ -340,15 +340,26 @@ async def extract_entities(
             maybe_nodes[k].extend(v)
         for k, v in m_edges.items():
             maybe_edges[tuple(sorted(k))].extend(v)
+    # Limit concurrent database operations to prevent pool exhaustion/timeouts
+    semaphore = asyncio.Semaphore(10)
+
+    async def _sem_merge_nodes(k, v):
+        async with semaphore:
+            return await _merge_nodes_then_upsert(k, v, knowledge_graph_inst, global_config)
+
+    async def _sem_merge_edges(k, v):
+        async with semaphore:
+            return await _merge_edges_then_upsert(k[0], k[1], v, knowledge_graph_inst, global_config)
+
     all_entities_data = await asyncio.gather(
         *[
-            _merge_nodes_then_upsert(k, v, knowledge_graph_inst, global_config)
+            _sem_merge_nodes(k, v)
             for k, v in maybe_nodes.items()
         ]
     )
     all_relationships_data = await asyncio.gather(
         *[
-            _merge_edges_then_upsert(k[0], k[1], v, knowledge_graph_inst, global_config)
+            _sem_merge_edges(k, v)
             for k, v in maybe_edges.items()
         ]
     )
