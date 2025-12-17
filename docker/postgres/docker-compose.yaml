@@ -24,14 +24,10 @@ services:
     # shared_buffers: ~25% of RAM
     # work_mem: Higher for vector index builds (HNSW)
     command: >
-      postgres 
-      -c shared_preload_libraries=age,vector 
-      -c shared_buffers=1GB 
-      -c work_mem=64MB 
-      -c maintenance_work_mem=512MB
+      postgres  -c shared_preload_libraries=age,vector  -c shared_buffers=2GB  -c work_mem=128MB  -c maintenance_work_mem=1GB
 
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}" ]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -41,7 +37,7 @@ services:
       resources:
         limits:
           cpus: '4'
-          memory: 4G
+          memory: 8G
         reservations:
           memory: 2G
 
