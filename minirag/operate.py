@@ -341,7 +341,7 @@ async def extract_entities(
         for k, v in m_edges.items():
             maybe_edges[tuple(sorted(k))].extend(v)
     # Limit concurrent database operations to prevent pool exhaustion/timeouts
-    semaphore = asyncio.Semaphore(2)
+    semaphore = asyncio.Semaphore(10)
 
     async def _sem_merge_nodes(k, v):
         async with semaphore:
@@ -376,15 +376,6 @@ async def extract_entities(
         data_for_vdb = {
             compute_mdhash_id(dp["entity_name"], prefix="ent-"): {
                 "content": dp["entity_name"] + dp["description"],
-                "entity_name": dp["entity_name"],
-            }
-            for dp in all_entities_data
-        }
-        await entity_vdb.upsert(data_for_vdb)
-    if entity_vdb is not None:
-        data_for_vdb = {
-            compute_mdhash_id(dp["entity_name"], prefix="ent-"): {
-                "content": dp["entity_name"] + " " + dp["description"],
                 "entity_name": dp["entity_name"],
             }
             for dp in all_entities_data

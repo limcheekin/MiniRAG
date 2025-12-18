@@ -165,6 +165,33 @@ class PostgreSQLDB:
             print(data)
             raise
 
+    async def executemany(
+        self,
+        sql: str,
+        data_list: List[dict],
+        upsert: bool = False,
+    ):
+        """Execute batch insert/update operations for improved performance."""
+        try:
+            async with self.pool.acquire() as connection:
+                if data_list:
+                    # Convert list of dicts to list of tuples
+                    args = [tuple(d.values()) for d in data_list]
+                    await connection.executemany(sql, args)
+        except (
+            asyncpg.exceptions.UniqueViolationError,
+            asyncpg.exceptions.DuplicateTableError,
+        ) as e:
+            if upsert:
+                logger.debug("Key value duplicate in batch, but upsert succeeded.")
+            else:
+                logger.error(f"Batch upsert error: {e}")
+        except Exception as e:
+            logger.error(f"PostgreSQL batch execute error: {e.__class__} - {e}")
+            print(sql)
+            print(f"Batch size: {len(data_list)}")
+            raise
+
     @staticmethod
     async def _prerequisite(conn: asyncpg.Connection, graph_name: str):
         try:
@@ -402,6 +429,9 @@ class PGVectorStorage(BaseVectorStorage):
         embeddings = np.concatenate(embeddings_list)
         for i, d in enumerate(list_data):
             d["__vector__"] = embeddings[i]
+        
+        # Prepare batch data for executemany
+        batch_data = []
         for item in list_data:
             if self.namespace == "chunks":
                 upsert_sql, data = self._upsert_chunks(item)
@@ -413,8 +443,11 @@ class PGVectorStorage(BaseVectorStorage):
                 upsert_sql, data = self._upsert_relationships(item)
             else:
                 raise ValueError(f"{self.namespace} is not supported")
+            batch_data.append(data)
 
-            await self.db.execute(upsert_sql, data)
+        # Execute batch insert instead of individual inserts
+        if batch_data:
+            await self.db.executemany(upsert_sql, batch_data, upsert=True)
 
     async def index_done_callback(self):
         logger.info("vector data had been saved into postgresql db!")
