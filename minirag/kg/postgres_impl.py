@@ -68,7 +68,8 @@ class PostgreSQLDB:
                 host=self.host,
                 port=self.port,
                 min_size=1,
-                max_size=self.max,
+                max_size=50,  # Increased from 20 to 50 for better concurrency
+                command_timeout=60,  # 60 second timeout for commands
                 init=init_connection,
             )
 

@@ -341,7 +341,7 @@ async def extract_entities(
         for k, v in m_edges.items():
             maybe_edges[tuple(sorted(k))].extend(v)
     # Limit concurrent database operations to prevent pool exhaustion/timeouts
-    semaphore = asyncio.Semaphore(10)
+    semaphore = asyncio.Semaphore(5)
 
     async def _sem_merge_nodes(k, v):
         async with semaphore:
