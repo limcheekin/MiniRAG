@@ -1,0 +1,3189 @@
+{
+  "test_cases": [
+    {
+      "question": "Did Adam Smith send a message to Li Hua about the upcoming building maintenance schedule before the administrators announced a temporary change in the construction schedule due to weather conditions?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Wolfgang ask Li Hua about watching \"Star Wars: A New Hope\" after he asked Li Hua about going to see \"Overwatch 3\"?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua agree to go out for dinner after Wolfgang first asked him if he wanted to go out for dinner?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua send a message to Jennifer thanking her for the new training schedule before he requested a change in his training schedule for Thursday?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua ask Jennifer for advice on how to prevent muscle soreness after an intense workout session before he told her that he feels soreness in his arm muscles after the workout this week?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua send a message to Jennifer asking for her opinion on protein supplements before he consulted her about his daily protein powder consumption?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Yuriko ask Li Hua for help with her studio's homepage before she booked a seat at the \"Central Perk\" cafe?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua discuss his progress with the fitness plan before he shared a blog post about his recent fitness achievements?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua send a message to Jennifer asking if he can turn the Thursday class to Friday after he requested a change in his training schedule for Thursday?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua ask Yuriko to play music together before Wolfgang proposed to pause playing musical instruments?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Wolfgang Schulz recommend the band learns \"Viva la Vida\" by Coldplay after he and Li Hua discussed what song to play this Sunday?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Wolfgang's promotion announcement occur before he invited Li Hua for dinner on 20260430?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Turalyon announce the construction updates and feedback from residents after Illidan Stormrage complained about the construction noise?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Hailey announce the new line of high-protein breads before inviting Li Hua to the special bakery event?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Chae tell Li Hua that taking a warm shower before sleeping can improve the sleep quality before sharing the neuroscience article with her?",
+      "ground_truth": "No",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua ask Jennifer Moore for book recommendations on fitness nutrition before she announced the special guest speaker at the gym?",
+      "ground_truth": "No",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Jennifer remind Li Hua about proper nutrition and hydration before Jake shared his tips for staying hydrated during the match?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did the group members talk about their favorite characters in the TV series Game of Thrones after Emily started a vote on the most hateable character?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Question: Did Jennifer remind Li Hua to consume enough protein after the workout before she shared tips with the group members on common mistakes to avoid after an intense workout?",
+      "ground_truth": "Answer: Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua ask Thane about his opinion on The Last of Us before he asked about Sekiro: Shadows Die Twice?",
+      "ground_truth": "No",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Jake Watson and Li Hua discuss the classic matches between FC Barcelona and FC Bayern Munich before the group members discussed the classic matches between FC Barcelona and Real Madrid?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did the group members debate about the best football manager in the Premier League history after they debated if Pep Guardiola is the greatest soccer manager in football history?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did the discussion about Jaime Lannister's character occur after the discussion about Cersei Lannister's character?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Wolfgang ask Li Hua if she wants to have pizza for dinner after work today before he wondered if she wanted to have Sichuan hot pot for dinner tonight?",
+      "ground_truth": "No",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Jennifer challenge Li Hua to do 60 pull-ups in a training session after she challenged him to do 100 pushups?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Jake share common knowledge about offside in soccer with Li Hua before he passed practical techniques to Li Hua on how to avoid offside for a forward?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Wolfgang arrive in Hong Kong after he informed Li Hua about his upcoming trip?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "What time does Li Hua watch the movie \"Overwatch 3\"?",
+      "ground_truth": "20260122",
+      "project": "Multi"
+    },
+    {
+      "question": "Who does Li Hua go to watch the movie \"Overwatch 3\" with?",
+      "ground_truth": "Wolfgang",
+      "project": "Multi"
+    },
+    {
+      "question": "Has Wolfgang ever been to Hong Kong?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Who knows about Wolfgang going to Hong Kong?",
+      "ground_truth": "LiHua & Chae & Yuriko",
+      "project": "Multi"
+    },
+    {
+      "question": "Who wished Li Hua a happy Lunar New Year?",
+      "ground_truth": "Adam Smith & Jennifer Moore & Wolfgang Schulz",
+      "project": "Multi"
+    },
+    {
+      "question": "Who introduced the bread delivery service and recommend Alice for the delivery?",
+      "ground_truth": "HaileyJohnson",
+      "project": "Multi"
+    },
+    {
+      "question": "What is the opportunity that makes Wolfgang and Yuriko acquaitances?",
+      "ground_truth": "LiHua introduce them to each other by saying that they can play music together every Sunday",
+      "project": "Multi"
+    },
+    {
+      "question": "What was the content of the first-ever delivery from Hailey to LiHua and what was LiHua's opinion about it?",
+      "ground_truth": "a fresh sourdough loaf and a bottle of milk and LiHua praises Hailey's bread and milk",
+      "project": "Multi"
+    },
+    {
+      "question": "What opportunity did LiHua create for Chae to meet Wolfgang and Yuriko?",
+      "ground_truth": "LiHua introduced Chae to Wolfgang and Yuriko during the band's gathering on Sunday evening",
+      "project": "Multi"
+    },
+    {
+      "question": "What special offerings did Hailey have for her backery shop in the month of May?",
+      "ground_truth": "a special Mother's Day bakery promotion & a special summer promotion on ice cream & a free baking class at the end of May & banana durian cheesecake",
+      "project": "Multi"
+    },
+    {
+      "question": "What feedbacks does Hailey ask from LiHua in July?",
+      "ground_truth": "feedback on the bread delivery service & customer feedback on a new line of artisanal donuts",
+      "project": "Multi"
+    },
+    {
+      "question": "How long does it take in total from LiHua planning on getting the air-conditioner to the air-conditioner been installed?",
+      "ground_truth": "about 27 days",
+      "project": "Multi"
+    },
+    {
+      "question": "Did it take more than 3 weeks from LiHua planning on getting the air-conditioner to the air-conditioner been actually installed?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did it take more than a week from Adam asking LiHua about the ideal installation date to Adam reminding LiHua about the contractor team installing air-conditioner at 18:00?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Who does LiHua want to invite to the photo exhibition and who goes with him (during August)?",
+      "ground_truth": "Wolfgang",
+      "project": "Multi"
+    },
+    {
+      "question": "Is the time interval between LiHua asking JakeWatson to help him with dribbling skills and Li Hua asking the group about classic must-watch UCL matches more than 2 days (restrict your search within August)?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Is the time interval more than 3 days between LiHua asking Adam to help him install a curtain on the basement window and Adam asking LiHua to measure the size of the window?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Is the time interval more than 7 days between Adam asking LiHua to measure the size of the window and Adam informing Li Hua that he has booked the curtain of the right size?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Is the time interval more than 3 days between LiHua confirming that he has received the curtain and Adam asking LiHua if the curtain is all good?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Is the time interval more than 3 days between LiHua first asking Adam if he can buy a small fridge for the basement and Adam asking LiHua about the size of the fridge?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Is the time interval more than 7 days between Adam asking LiHua about the size of the fridge and Adam informing LiHua that the fridge will be delivered at 4pm next day?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Wolfgang suddenly becomes very concerned about good body shape and healthy food choices in December. What are the two conversations he had with LiHua in December that reflect this?",
+      "ground_truth": "20261202_14:00 & 20261209_19:00",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua agree to have dinner with Wolfgang after he told Wolfgang about the lunch arrangement?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua ask Wolfgang Schulz for a recommendation on a gym or fitness center before asking Jennifer Moore for book recommendations on fitness nutrition?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua ask Wolfgang Schulz if he wants to go to the gym together before Jennifer reminded Li Hua to participate in the gym's membership feedback activity?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua send a message to Wolfgang Schulz saying that he has prepared all the delicious food for tonight's Chinese Lunar New Year before Wolfgang sent a message to Li Hua wishing him a happy Lunar New Year?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua provide feedback to Jennifer Moore on his new meal plan before he asked her for advice on a healthy meal plan?",
+      "ground_truth": "No",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua's complaint about the customer who modifies their requirements occur before Wolfgang comforted him?",
+      "ground_truth": "No",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Adam Smith send Li Hua a reminder about the upcoming rent due date before Li Hua sent a message about having already transferred the rent on 20260301?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua share a blog post about his recent fitness achievements after Jennifer sent him a motivational message?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua send a follow-up message to Jennifer before she asked him about his latest sleeping schedule?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua ask Adam Smith about placing potted plants in the basement before he asked about decorating the basement?",
+      "ground_truth": "No",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua ask Wolfgang for advice on renovating the basement before he invited Adam Smith to check the progress of the basement renovation?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Li Hua tell Wolfgang about making a new friend before Yuriko reminded the group members to meet for the music festival?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "Did Yuriko tell Li Hua about booking a seat at the \"Central Perk\" cafe before Li Hua sent her a message to confirm the details of their next meeting?",
+      "ground_truth": "Yes",
+      "project": "Multi"
+    },
+    {
+      "question": "What time does Li Hua check in with Adam about moving in?",
+      "ground_truth": "5:30 PM",
+      "project": "Single"
+    },
+    {
+      "question": "When was the first time Li Hua had dinner with Wolfgang this year?",
+      "ground_truth": "20260108",
+      "project": "Single"
+    },
+    {
+      "question": "Where was the first time Li Hua had dinner with Wolfgang this year?",
+      "ground_truth": "the cozy café downtown",
+      "project": "Single"
+    },
+    {
+      "question": "What time is Li Hua's lunch with Wolfgang Schulz at the cozy café downtown?",
+      "ground_truth": "20260108",
+      "project": "Single"
+    },
+    {
+      "question": "What is the Wi-Fi password at Li Hua's house?",
+      "ground_truth": "Family123",
+      "project": "Single"
+    },
+    {
+      "question": "What does Adam say about having friends over?",
+      "ground_truth": "having friends over occasionally is fine",
+      "project": "Single"
+    },
+    {
+      "question": "What house rule does Adam mention?",
+      "ground_truth": "keep noise to a minimum during late hours",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua report to Adam on January 6th?",
+      "ground_truth": "the water tab in the apartment is broken",
+      "project": "Single"
+    },
+    {
+      "question": "When does Adam confirm the plumber will arrive?",
+      "ground_truth": "tomorrow at 10 AM",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua ask Adam about the door hinge?",
+      "ground_truth": "a small repair",
+      "project": "Single"
+    },
+    {
+      "question": "What is the name of the gym that Wolfgang recommended LiHua to go to?",
+      "ground_truth": "FitZone",
+      "project": "Single"
+    },
+    {
+      "question": "When does Li Hua ask Jennifer Moore about adjusting the protein in her meal plan?",
+      "ground_truth": "20260122",
+      "project": "Multi"
+    },
+    {
+      "question": "What time does Li Hua watch the movie \"Overwatch 3\"?",
+      "ground_truth": "20260122",
+      "project": "Multi"
+    },
+    {
+      "question": "Who does Li Hua go to watch the movie \"Overwatch 3\" with?",
+      "ground_truth": "Wolfgang",
+      "project": "Multi"
+    },
+    {
+      "question": "When does Li Hua plan to celebrate Chinese Lunar New Year?",
+      "ground_truth": "20260118",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua plan to celebrate Chinese Lunar New Year?",
+      "ground_truth": "dumplings",
+      "project": "Single"
+    },
+    {
+      "question": "Who does Li Hua plan to celebrate Chinese Lunar New Year with?",
+      "ground_truth": "Wolfgang",
+      "project": "Single"
+    },
+    {
+      "question": "Li Hua accidentally broke a light fixture once. What did Adam say about the light fixture?",
+      "ground_truth": "I'll arrange for a professional to take a look",
+      "project": "Single"
+    },
+    {
+      "question": "Li Hua has a difficult client. When did he solve that client's project?",
+      "ground_truth": "20260209",
+      "project": "Multi"
+    },
+    {
+      "question": "When did Li Hua express frustration about a client changing requirements?",
+      "ground_truth": "20260131_14:00",
+      "project": "Single"
+    },
+    {
+      "question": "Who suggested Li Hua keep a clear log of all the changes requested by the client?",
+      "ground_truth": "Wolfgang Schulz",
+      "project": "Single"
+    },
+    {
+      "question": "What did Wolfgang Schulz suggest Li Hua to do when Li Hua face a difficult client?",
+      "ground_truth": "keep a clear log of all the changes requested by the client",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua plan to do to clear their head?",
+      "ground_truth": "go for a walk and find a new café",
+      "project": "Single"
+    },
+    {
+      "question": "What is the name of the café Wolfgang Schulz recommends to Li Hua?",
+      "ground_truth": "The Java Spot",
+      "project": "Single"
+    },
+    {
+      "question": "Can Li Hua hang his artworks on the wall?",
+      "ground_truth": "Yes",
+      "project": "Single"
+    },
+    {
+      "question": "What does Adam Smith suggest Li Hua use to hang artwork without damaging the walls?",
+      "ground_truth": "use removable hooks",
+      "project": "Single"
+    },
+    {
+      "question": "How many times does Li Hua train per week now?",
+      "ground_truth": "2",
+      "project": "Single"
+    },
+    {
+      "question": "When did Li Hua change the training plan?",
+      "ground_truth": "20260204",
+      "project": "Single"
+    },
+    {
+      "question": "What days does Li Hua takes for the training sessions?",
+      "ground_truth": "Tuesdays and Thursdays",
+      "project": "Single"
+    },
+    {
+      "question": "When did Li Hua ask Jennifer Moore for tips on dealing with muscle soreness?",
+      "ground_truth": "20260206_16:00",
+      "project": "Single"
+    },
+    {
+      "question": "What are some of Jennifer Moore's tips for dealing with muscle soreness?",
+      "ground_truth": "hydration&active recovery&stretching&foam rolling&rest",
+      "project": "Single"
+    },
+    {
+      "question": "Why did Li Hua ask for extra exercises to do at home?",
+      "ground_truth": "to complement his training schedule",
+      "project": "Single"
+    },
+    {
+      "question": "What exercises did Jennifer Moore suggest Li Hua do at home?",
+      "ground_truth": "bodyweight squats& plank holds&push-ups&lunges&glute bridges",
+      "project": "Single"
+    },
+    {
+      "question": "What is Adam Smith's condition for Li Hua to add decorations to the basement?",
+      "ground_truth": "must be reversible and not damage anything",
+      "project": "Single"
+    },
+    {
+      "question": "When was the first time Wolfgang went to Li Hua's basement?",
+      "ground_truth": "20260221",
+      "project": "Single"
+    },
+    {
+      "question": "What ideas did Wolfgang Schulz suggest for Li Hua's basement practice spot?",
+      "ground_truth": "good lighting&soundproofing&a comfy chair",
+      "project": "Single"
+    },
+    {
+      "question": "Why did Adam remind Li Hua not to play guitar late at night?",
+      "ground_truth": "a few neighbors have mentioned they're hearing guitar music late at night",
+      "project": "Single"
+    },
+    {
+      "question": "What type of ambiance does YurikoYamamoto want for her studio's homepage?",
+      "ground_truth": "more welcoming and engaging",
+      "project": "Single"
+    },
+    {
+      "question": "When did Li Hua invite Adam Smith to check the basement renovation progress?",
+      "ground_truth": "20260223_19:00",
+      "project": "Single"
+    },
+    {
+      "question": "What is the name of the café where Li Hua and YurikoYamamoto first meeting to talk about Yuriko's website?",
+      "ground_truth": "Central Perk",
+      "project": "Single"
+    },
+    {
+      "question": "What is the essence of YurikoYamamoto Li Hua is helping with her homepage?",
+      "ground_truth": "speech therapy",
+      "project": "Single"
+    },
+    {
+      "question": "What type of instrument does Li Hua play in the basement?",
+      "ground_truth": "guitar",
+      "project": "Single"
+    },
+    {
+      "question": "When did Adam Smith inform Li Hua about potential issues with the pipes in the basement?",
+      "ground_truth": "20260301_13:00",
+      "project": "Single"
+    },
+    {
+      "question": "When did Li Hua inform Adam Smith that the rent was transferred?",
+      "ground_truth": "20260301_10:00",
+      "project": "Single"
+    },
+    {
+      "question": "When is the music concert that Wolfgang invites Li Hua to?",
+      "ground_truth": "20260307_18:00",
+      "project": "Single"
+    },
+    {
+      "question": "What dish does Li Hua agree to bring to the neighborhood potluck dinner?",
+      "ground_truth": "Homemade pasta salad",
+      "project": "Single"
+    },
+    {
+      "question": "Who is Li Hua meeting with to discuss homepage design updates?",
+      "ground_truth": "Yuriko Yamamoto",
+      "project": "Single"
+    },
+    {
+      "question": "What new feature does Yuriko Yamamoto consider adding to her studio's homepage?",
+      "ground_truth": "A blog section",
+      "project": "Single"
+    },
+    {
+      "question": "What time is the power outage in the neighborhood?",
+      "ground_truth": "2 PM to 3 PM",
+      "project": "Single"
+    },
+    {
+      "question": "What suggestions does Li Hua give for promoting the new scheduling feature?",
+      "ground_truth": "Showcase it on social media platforms and include a short tutorial and send out a newsletter to clients",
+      "project": "Single"
+    },
+    {
+      "question": "Who invites Li Hua to join the community bake sale?",
+      "ground_truth": "Adam Smith",
+      "project": "Single"
+    },
+    {
+      "question": "What day and time is the community bake sale taking place?",
+      "ground_truth": "Sunday at 3 PM",
+      "project": "Single"
+    },
+    {
+      "question": "When does Li Hua request a delivery from Hailey Johnson?",
+      "ground_truth": "Tuesday",
+      "project": "Single"
+    },
+    {
+      "question": "What is the address where Li Hua wants the bread delivery to be made?",
+      "ground_truth": "123 Sunny Street",
+      "project": "Single"
+    },
+    {
+      "question": "What service does Hailey Johnson offer to Li Hua?",
+      "ground_truth": "Doorstep delivery service for fresh milk and bread",
+      "project": "Single"
+    },
+    {
+      "question": "What time does Hailey Johnson start baking?",
+      "ground_truth": "4 AM",
+      "project": "Single"
+    },
+    {
+      "question": "Where does Li Hua plan to meet Yuriko Yamamoto to show the final website?",
+      "ground_truth": "Central Perk café",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua suggest to Hailey regarding the frequency of bread delivery?",
+      "ground_truth": "Twice a week on Mondays and Fridays at 8am",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua agree to bring to the bonfire singing party hosted by Chae Song-hwa?",
+      "ground_truth": "Li Hua will bring his guitar",
+      "project": "Single"
+    },
+    {
+      "question": "What is the focus of Li Hua's next month's fitness plan according to Jennifer?",
+      "ground_truth": "Strengthening lower limbs",
+      "project": "Single"
+    },
+    {
+      "question": "What is the building's policy that Adam reminds Li Hua about?",
+      "ground_truth": "Recycling policy",
+      "project": "Single"
+    },
+    {
+      "question": "What is the topic of the online tutorial Yuriko shares with the group?",
+      "ground_truth": "Advanced drum techniques",
+      "project": "Single"
+    },
+    {
+      "question": "What is Wolfgang looking for in his new drums?",
+      "ground_truth": "Something versatile that sounds good for both rock and softer tunes like The Beatles",
+      "project": "Single"
+    },
+    {
+      "question": "What song does Li Hua suggest for the jam session on 20260405?",
+      "ground_truth": "Viva la Vida",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua think about the rosemary focaccia?",
+      "ground_truth": "Li Hua thinks the rosemary focaccia is amazing",
+      "project": "Single"
+    },
+    {
+      "question": "When does Li Hua confirm the rent transfer to Adam?",
+      "ground_truth": "20260331_17:00",
+      "project": "Single"
+    },
+    {
+      "question": "What joke does Wolfgang make as an April Fool's joke?",
+      "ground_truth": "That Wolfgang bought a set of expensive drums",
+      "project": "Single"
+    },
+    {
+      "question": "Who is delivering the bread to Li Hua on 20260403?",
+      "ground_truth": "Alice",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua think about improvisation during the jam session?",
+      "ground_truth": "Improvisation sounds great",
+      "project": "Single"
+    },
+    {
+      "question": "When is ChaeSong-hwa hosting the community medical knowledge lecture?",
+      "ground_truth": "7 PM on Saturday",
+      "project": "Single"
+    },
+    {
+      "question": "What topics will be covered in the community medical knowledge lecture?",
+      "ground_truth": "Basics of common health issues and how to prevent them",
+      "project": "Single"
+    },
+    {
+      "question": "What new song does the Jolly band decide to work on for the jam session according to their discussion on 20260410?",
+      "ground_truth": "Stand By Me",
+      "project": "Single"
+    },
+    {
+      "question": "What is Li Hua's feedback on Chae Song-hwa's medical knowledge lecture?",
+      "ground_truth": "It is insightful and makes complex topics easy to understand",
+      "project": "Single"
+    },
+    {
+      "question": "When is the anniversary event of Hailey Johnson's bakery shop?",
+      "ground_truth": "April 15 to 17",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua want to have on Hailey's bakery shop anniversary event?",
+      "ground_truth": "Sourdough and sweet pastries",
+      "project": "Single"
+    },
+    {
+      "question": "Why does Li Hua ask ChaeSong-hwa about whether neurosurgeons actually use test tubes in their work?",
+      "ground_truth": "Li Hua is trying to get some insights for a website design",
+      "project": "Single"
+    },
+    {
+      "question": "Who proposes that the band takes a break from jamming this week?",
+      "ground_truth": "Wolfgang Schulz",
+      "project": "Single"
+    },
+    {
+      "question": "What suggestions does Li Hua propose to Adam Smith about the upcoming community garden renovation?",
+      "ground_truth": "Add more seating areas for people to relax and enjoy the space and some flower beds with native plants",
+      "project": "Single"
+    },
+    {
+      "question": "What kinds of flowers does Li Hua recommend to Adam Smith for the flower beds?",
+      "ground_truth": "Lavender and coneflowers and fresh herbs",
+      "project": "Single"
+    },
+    {
+      "question": "What will be a gift for Li Hua if he chooses to renew the fitness contract with Jennifer Moore?",
+      "ground_truth": "A cool fitness bag as a gift for all the gym activities",
+      "project": "Single"
+    },
+    {
+      "question": "When is the karaoke activity organized by ChaeSong-hwa?",
+      "ground_truth": "Saturday at 7 PM",
+      "project": "Single"
+    },
+    {
+      "question": "Who is Li Hua bringing to the band's jam session according to their discussion on 20260425?",
+      "ground_truth": "ChaeSong-hwa",
+      "project": "Single"
+    },
+    {
+      "question": "What garden-related activity is Thrall planning to organize?",
+      "ground_truth": "A community planting day",
+      "project": "Single"
+    },
+    {
+      "question": "What is the proposed solution for making the garden more inviting on sunny days?",
+      "ground_truth": "Adding shade with umbrellas or trees",
+      "project": "Single"
+    },
+    {
+      "question": "What is the main topic of the conversation on 2026-04-28 at 5 PM?",
+      "ground_truth": "Breathing techniques and tips for squats during workouts",
+      "project": "Single"
+    },
+    {
+      "question": "When is Wolfgang Schulz's promotion celebration dinner?",
+      "ground_truth": "6 PM on the day after tomorrow (implied to be 2026-04-30)",
+      "project": "Single"
+    },
+    {
+      "question": "What is the name of the Italian restaurant where Wolfgang and Li Hua are having dinner to celebrate Wolfgang's promotion?",
+      "ground_truth": "Venedia Grancaffe",
+      "project": "Single"
+    },
+    {
+      "question": "What is Li Hua's suggestion for scheduling the water pipe repairs in the garden?",
+      "ground_truth": "During off-peak hours",
+      "project": "Single"
+    },
+    {
+      "question": "When is the community meeting for the garden project scheduled according to the discussion on 20260507?",
+      "ground_truth": "Saturday at 10 am",
+      "project": "Single"
+    },
+    {
+      "question": "What percentage discount is Hailey Johnson offering for Mother's Day pastries?",
+      "ground_truth": "15%",
+      "project": "Single"
+    },
+    {
+      "question": "Which two specific pastries does Hailey Johnson recommend for Mother's Day?",
+      "ground_truth": "Raspberry-filled croissants and chocolate eclairs",
+      "project": "Single"
+    },
+    {
+      "question": "What type of stretches does JenniferMoore suggest before and after workouts?",
+      "ground_truth": "Dynamic stretches before and static stretches after",
+      "project": "Single"
+    },
+    {
+      "question": "When is the web design seminar at Wolfgang's company happening?",
+      "ground_truth": "Thursday at 3 PM",
+      "project": "Single"
+    },
+    {
+      "question": "What is Li Hua looking forward to trying from the summer promotion?",
+      "ground_truth": "Fruity ice cream flavors and a mango-coconut pastry",
+      "project": "Single"
+    },
+    {
+      "question": "What did Li Hua enjoy the most about the restaurant that he and Wolfgang visited for dinner on 20260514?",
+      "ground_truth": "The pasta dish and the dessert",
+      "project": "Single"
+    },
+    {
+      "question": "Why is Chae Song-hwa unable to join the rehearsal?",
+      "ground_truth": "She has to attend a medical lecture",
+      "project": "Single"
+    },
+    {
+      "question": "What type of lighting is preferred for the seating area in the community garden?",
+      "ground_truth": "Soft white lights",
+      "project": "Single"
+    },
+    {
+      "question": "When is the construction of the garden supposed to start?",
+      "ground_truth": "This Wednesday (20260520)",
+      "project": "Single"
+    },
+    {
+      "question": "Which flowers does RexxarRemar suggest for a vibrant vibe?",
+      "ground_truth": "Bluebell and Camellia and Tulip",
+      "project": "Single"
+    },
+    {
+      "question": "How does RexxarRemar plan to spend time in the garden once it's done?",
+      "ground_truth": "For family gatherings and relaxing afternoons",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua find as a perfect place to work in his conversation with Chae?",
+      "ground_truth": "The Lighthouse Cafe",
+      "project": "Single"
+    },
+    {
+      "question": "What songs does Chae propose to the Jolly band to try out on Sunday according to the conversation on 20260521?",
+      "ground_truth": "The Yellow Wind Rises and \"To the West\"",
+      "project": "Single"
+    },
+    {
+      "question": "What is IllidanStormrage's suggestion to the ongoing garden construction according to the discussion on 20260522?",
+      "ground_truth": "plan some quiet hours when the kids are playing",
+      "project": "Single"
+    },
+    {
+      "question": "What songs does LiHua suggest adding to the karaoke playlist in his conversation with Chae?",
+      "ground_truth": "I Will Survive and \"Sweet Caroline\"",
+      "project": "Single"
+    },
+    {
+      "question": "What time does Turalyon plan to limit noisy activities?",
+      "ground_truth": "From 2-3 pm",
+      "project": "Single"
+    },
+    {
+      "question": "Why does WolfgangSchulz inquire of the band members about health products?",
+      "ground_truth": "Wolfgang is feeling very tired lately with the overtime and wants to boost up his energy",
+      "project": "Single"
+    },
+    {
+      "question": "What is the name of the song LiHua suggests revisiting for the band's music session according to their conversation on 20260529?",
+      "ground_truth": "The History of Everything",
+      "project": "Single"
+    },
+    {
+      "question": "Which kind of pastry does Li Hua express his interest in trying in his conversation with Hailey on 20260531?",
+      "ground_truth": "the new banana durian cheesecake",
+      "project": "Single"
+    },
+    {
+      "question": "When did Li Hua inform Adam Smith that the rent for last month (implied to be May) had been transferred?",
+      "ground_truth": "2026-06-02 at 10:00",
+      "project": "Single"
+    },
+    {
+      "question": "What is the name of Hailey Johnson's new weekly flavor cheese?",
+      "ground_truth": "Hazelnut Basque Roasted Cheese",
+      "project": "Single"
+    },
+    {
+      "question": "Why can't people sit on the benches when Turalyon informs the community that the benches have been installed on 20260604?",
+      "ground_truth": "the paint isn't dry yet",
+      "project": "Single"
+    },
+    {
+      "question": "What is the phone number for the maintenance worker that Adam Smith provided to Li Hua for the broken streetlight?",
+      "ground_truth": "314159",
+      "project": "Single"
+    },
+    {
+      "question": "What breathing technique does Jennifer Moore suggest for running?",
+      "ground_truth": "Inhaling for 3 steps and exhaling for 2 steps",
+      "project": "Single"
+    },
+    {
+      "question": "When is the Freelancer Group Meeting scheduled for according to the conversation between LiHua and Yuriko?",
+      "ground_truth": "This Wednesday at 3 pm",
+      "project": "Single"
+    },
+    {
+      "question": "What suggestions does Jennifer give to LiHua to help boost his endurance?",
+      "ground_truth": "try incorporating longer cardio sessions and interval training into your routine",
+      "project": "Single"
+    },
+    {
+      "question": "What new pastry does Hailey think is perfect for a fitness lover like Li Hua?",
+      "ground_truth": "high-protein breads",
+      "project": "Single"
+    },
+    {
+      "question": "Who proposes adding some outdoor games or a small water feature to the children's play areain the community discussion?",
+      "ground_truth": "Thrall",
+      "project": "Single"
+    },
+    {
+      "question": "Who proposes adding picnic tables for families to enjoy some snacks after playing?",
+      "ground_truth": "Li Hua",
+      "project": "Single"
+    },
+    {
+      "question": "Who proposes creating a little garden area where kids can help plant flowers or vegetables?",
+      "ground_truth": "GromHellscream",
+      "project": "Single"
+    },
+    {
+      "question": "Why does LiHua bring up Adam Smith in the band's conversation on 20260616?",
+      "ground_truth": "LiHua thinks it is really nice for Mr. Smith to rent this basement to us for practice",
+      "project": "Single"
+    },
+    {
+      "question": "What event does LiHua think is an opportunity for the Jolly band to perform in front of the crowd?",
+      "ground_truth": "the poster saying that the town is holding a local music festival",
+      "project": "Single"
+    },
+    {
+      "question": "What dietary restrictions does LiHua have in his conversation with Hailey?",
+      "ground_truth": "No dietary restrictions",
+      "project": "Single"
+    },
+    {
+      "question": "What will special guest speaker be talking about as Jennifer mentions to LiHua?",
+      "ground_truth": "about nutrition for athletes",
+      "project": "Single"
+    },
+    {
+      "question": "What is the survey that Jennifer wants LiHua to fill out about?",
+      "ground_truth": "the experience with our training sessions so far",
+      "project": "Single"
+    },
+    {
+      "question": "When does the special event at Hailey's bakery start according to Hailey and LiHua's conversation on 20260622?",
+      "ground_truth": "The event starts at 10 AM this Saturday",
+      "project": "Single"
+    },
+    {
+      "question": "What video does LiHua send to the band group chat on 20260624?",
+      "ground_truth": "a video of himself playing the intro to \"Stairway to Heaven\"",
+      "project": "Single"
+    },
+    {
+      "question": "Waht song does Wolfgang propose adding to the band's practice set on 20260625?",
+      "ground_truth": "Viva la Vida by Coldplay",
+      "project": "Single"
+    },
+    {
+      "question": "What is the main topic of the conversation between LiHua and ChaeSong-hwa on 20260626?",
+      "ground_truth": "Chae and her team making a breakthrough in the research study and LiHua congratulating her",
+      "project": "Single"
+    },
+    {
+      "question": "Waht songs does Chae recommend in the band's group discussion on 20260629?",
+      "ground_truth": "Uptown Funk or \"Happy\"",
+      "project": "Single"
+    },
+    {
+      "question": "What tip does Jennifer give to the gym members on 20260630?",
+      "ground_truth": "Staying hydrated during workout is very important",
+      "project": "Single"
+    },
+    {
+      "question": "Why deoes the construction have to be postponed according to Tirion Fordring?",
+      "ground_truth": "the storm and the rain have been going on for days",
+      "project": "Single"
+    },
+    {
+      "question": "What kinds of Thai food does Wolfgang want to try out at the Thai restaurant on 20260702?",
+      "ground_truth": "pad thai and maybe some spring rolls",
+      "project": "Single"
+    },
+    {
+      "question": "What song does Yuriko propose that the band can practice this weekend according to the band's discussion on 20260703?",
+      "ground_truth": "Take Me Home Country Roads by John Denver",
+      "project": "Single"
+    },
+    {
+      "question": "What is the name of the song that Yuriko recommend to the band on 20260706?",
+      "ground_truth": "Rolling in the Deep by Adele",
+      "project": "Single"
+    },
+    {
+      "question": "Why are LiHua and Adam concerned about the basement in their conversation on 20260707?",
+      "ground_truth": "They want to check if there were any issues in the basement after those rainstorms",
+      "project": "Single"
+    },
+    {
+      "question": "Why is Jennifer checking in in the gym group chat on 20260708?",
+      "ground_truth": "She wants to hear how the members are all doing and offer some personalized advice.",
+      "project": "Single"
+    },
+    {
+      "question": "What is the article that Chae shares with LiHua about?",
+      "ground_truth": "how to fall asleep faster at night",
+      "project": "Single"
+    },
+    {
+      "question": "What is LiHua's feeback on Hailey's new artisanal donuts?",
+      "ground_truth": "The flavors are so unique and delicious",
+      "project": "Single"
+    },
+    {
+      "question": "What new flavor is LiHua looking for as he mentions to Hailey in their conversation on 20260714?",
+      "ground_truth": "a matcha flavor",
+      "project": "Single"
+    },
+    {
+      "question": "Which performance does Chae want the band members to check out in their discussion on 20260715?",
+      "ground_truth": "the amazing live performance of \"Bohemian Rhapsody\" by Queen",
+      "project": "Single"
+    },
+    {
+      "question": "Why is LiHua praising Chae in their conversation on 20260717?",
+      "ground_truth": "LiHua was really amazed by Chae's performance in the band last Sunday because Chae's singing has really leveled up",
+      "project": "Single"
+    },
+    {
+      "question": "What cool thing does Wolfgang find that he wants to share with LiHua?",
+      "ground_truth": "this awesome guitar Wolfgang found online",
+      "project": "Single"
+    },
+    {
+      "question": "What tips on balancing work and personal hobbies does LiHua give to Chae?",
+      "ground_truth": "try setting specific hours for work and separate times for your hobbies and don't forget to schedule some fun time for yourself",
+      "project": "Single"
+    },
+    {
+      "question": "What is the size of the basement?",
+      "ground_truth": "The basement is approximately 15 feet by 20 feet",
+      "project": "Single"
+    },
+    {
+      "question": "What is Wolfgang's favorite superhero?",
+      "ground_truth": "Iron Man",
+      "project": "Single"
+    },
+    {
+      "question": "What is LiHua's favorite superhero?",
+      "ground_truth": "Spider-Man",
+      "project": "Single"
+    },
+    {
+      "question": "What sports would LiHua like to see on the community sports day?",
+      "ground_truth": "some team sports like soccer or basketball",
+      "project": "Single"
+    },
+    {
+      "question": "What activities are being discussed for the community sports day?",
+      "ground_truth": "Soccer and basketball and tug-of-war and sack race are mentioned as potential activities for the community sports day",
+      "project": "Single"
+    },
+    {
+      "question": "What new hobbies does Wolfgang Schulz propose to Li Hua?",
+      "ground_truth": "Wolfgang Schulz proposes pottery or painting as a hobby to Li Hua",
+      "project": "Single"
+    },
+    {
+      "question": "What brands of air-conditioners does LiHua recommend to Wolfgang?",
+      "ground_truth": "Mitsubishi and Daikin",
+      "project": "Single"
+    },
+    {
+      "question": "Who is recommended by Jennifer to share some fitness tips in the gym group chat on 20260730?",
+      "ground_truth": "LiHua",
+      "project": "Single"
+    },
+    {
+      "question": "What does Hailey Johnson want Li Hua to help with at the bakery according to their discussion on 20260731?",
+      "ground_truth": "Hailey Johnson wants Li Hua to help gather feedback from customers at the bread-tasting event",
+      "project": "Single"
+    },
+    {
+      "question": "What day do Li Hua and Wolfgang Schulz plan to visit the photography exhibition?",
+      "ground_truth": "Li Hua and Wolfgang Schulz plan to visit the photography exhibition on Friday evening",
+      "project": "Single"
+    },
+    {
+      "question": "When is Wolfgang and LiHua going to the photography exhibition on 20260805?",
+      "ground_truth": "19:00",
+      "project": "Single"
+    },
+    {
+      "question": "What new components are being added to the garden project as Turalyon announces it on 20260806?",
+      "ground_truth": "incorporating sustainable practices like recycling and composting into our renovation project",
+      "project": "Single"
+    },
+    {
+      "question": "Why is Yuriko asking for LiHua's help on 20260807?",
+      "ground_truth": "She has got ten logo designs for my speech therapy studio and she would love LiHua's opinion on which one stands out the most",
+      "project": "Single"
+    },
+    {
+      "question": "When is the installation of the air-conditioner for the basement?",
+      "ground_truth": "It's set for Wednesday next week",
+      "project": "Single"
+    },
+    {
+      "question": "Why does Adam reach out to LiHua on 20260810?",
+      "ground_truth": "To check if LiHua had a chance to look over the warranty and maintenance plans for the air conditioner",
+      "project": "Single"
+    },
+    {
+      "question": "What tips does Jennifer give to LiHua about preventing muscle soreness after a tough workout?",
+      "ground_truth": "make sure to warm up properly before workouts and cool down afterward & Stretching & Stay hydrated and consider foam rolling post-session to help with recovery",
+      "project": "Single"
+    },
+    {
+      "question": "When is the contractor team going to install the air-conditioner?",
+      "ground_truth": "20260812 6PM",
+      "project": "Single"
+    },
+    {
+      "question": "When is the garage sale being discussed?",
+      "ground_truth": "20260814_15:00",
+      "project": "Single"
+    },
+    {
+      "question": "What is the reason Thrall cannot participate in the garage sale?",
+      "ground_truth": "Thrall has a lot happening with the garden renovations",
+      "project": "Single"
+    },
+    {
+      "question": "What does RexxarRemar suggest to make the garage sale more enjoyable?",
+      "ground_truth": "RexxarRemar suggests having snacks or drinks at the garage sale",
+      "project": "Single"
+    },
+    {
+      "question": "Who offers to help with setting up for the garage sale?",
+      "ground_truth": "AdamSmith",
+      "project": "Single"
+    },
+    {
+      "question": "What type of stretches does Sage prefer before hitting the gym?",
+      "ground_truth": "Sage prefers dynamic stretches",
+      "project": "Single"
+    },
+    {
+      "question": "What does JenniferMoore suggest to improve performance and prevent injuries?",
+      "ground_truth": "JenniferMoore suggests incorporating stretching techniques",
+      "project": "Single"
+    },
+    {
+      "question": "What does Viper plan to do to increase their stamina?",
+      "ground_truth": "Viper plans to focus on cardio",
+      "project": "Single"
+    },
+    {
+      "question": "What does Sova plan to do to keep their cardio interesting?",
+      "ground_truth": "Sova plans to mix it up with different types of cardio exercises",
+      "project": "Single"
+    },
+    {
+      "question": "How much discount is Hailey willing to give to LiHua according to their conversation on 20260816?",
+      "ground_truth": "15% off",
+      "project": "Single"
+    },
+    {
+      "question": "Who does Li Hua mention as their favorite character from The Witcher 3?",
+      "ground_truth": "Geralt",
+      "project": "Single"
+    },
+    {
+      "question": "Why does LiHua like Geralt from The Witcher 3?",
+      "ground_truth": "He's such a complex character with that no-nonsense attitude but deep down he has a great sense of morality & his monster-slaying skills are just epic",
+      "project": "Single"
+    },
+    {
+      "question": "What is Li Hua's opinion about Yennefer's character?",
+      "ground_truth": "Intense & fiercely independent & her relationship with Geralt evolves",
+      "project": "Single"
+    },
+    {
+      "question": "Which scene stood out for Li Hua in The Witcher 3?",
+      "ground_truth": "The \"Battle of Kaer Morhen\"",
+      "project": "Single"
+    },
+    {
+      "question": "Which scene in The Witcher 3 does ThaneChambers consider as one of his favorites involving Yennefer?",
+      "ground_truth": "The scene when Geralt is looking for Yennefer in the early part of the game",
+      "project": "Single"
+    },
+    {
+      "question": "What is Li Hua's impression of the Blood and Wine expansion?",
+      "ground_truth": "Incredible & new area is stunning & story feels like a mini-epic",
+      "project": "Single"
+    },
+    {
+      "question": "What is Li Hua's opinion on the characters in Succession?",
+      "ground_truth": "Intense family dynamics and business war",
+      "project": "Single"
+    },
+    {
+      "question": "What TV show does EmilyBurnett recommend to Li Hua after discussing Succession?",
+      "ground_truth": "The Crown and Ted Lasso",
+      "project": "Single"
+    },
+    {
+      "question": "When does Li Hua plan to meet JakeWatson for soccer practice?",
+      "ground_truth": "Saturday afternoon at 3 PM",
+      "project": "Single"
+    },
+    {
+      "question": "What are some of the upcoming PS5 exclusives discussed?",
+      "ground_truth": "Final Fantasy XVI & Marvel's Spider-Man 2 & Ghostwire: Tokyo",
+      "project": "Single"
+    },
+    {
+      "question": "Which upcoming PS5 exclusive game does Gavriel express curiosity about?",
+      "ground_truth": "Ghostwire: Tokyo",
+      "project": "Single"
+    },
+    {
+      "question": "Which UCL match does Jasper recommend as a classic must-watch?",
+      "ground_truth": "The 2005 final between Liverpool and AC Milan",
+      "project": "Single"
+    },
+    {
+      "question": "What skill does Li Hua plan to improve with WolfgangSchulz's help?",
+      "ground_truth": "Data analysis and coding related to AI tools",
+      "project": "Single"
+    },
+    {
+      "question": "Who shared a music theory tutorial with the group?",
+      "ground_truth": "Chae Song-hwa",
+      "project": "Single"
+    },
+    {
+      "question": "Which regions in Witcher 3 did Li Hua and Thane Chambers discuss?",
+      "ground_truth": "Skellige and Toussaint",
+      "project": "Single"
+    },
+    {
+      "question": "What is Kendall's relationship with Logan like according to the group's discussion?",
+      "ground_truth": "Toxic",
+      "project": "Single"
+    },
+    {
+      "question": "What is the topic of discussion between Li Hua and Wolfgang Schulz on burger preferences?",
+      "ground_truth": "Medium rare vs. well-done meat patty in a classic American",
+      "project": "Single"
+    },
+    {
+      "question": "What is Li Hua's preference for a burger patty's doneness?",
+      "ground_truth": "Medium rare",
+      "project": "Single"
+    },
+    {
+      "question": "What is Wolfgang's preference for a burger patty's doneness?",
+      "ground_truth": "well-done",
+      "project": "Single"
+    },
+    {
+      "question": "Why does Wolfgang prefer a well-done meat patty in a burger?",
+      "ground_truth": "It is safer and more flavorful & he likes a little char on his burger",
+      "project": "Single"
+    },
+    {
+      "question": "What toppings does Wolfgang Schulz prefer on his burger?",
+      "ground_truth": "Cheese and bacon",
+      "project": "Single"
+    },
+    {
+      "question": "What books does Jennifer recommend to LiHua for deepening understanding of fitness nutrition?",
+      "ground_truth": "The New Rules of Lifting and \"Precision Nutrition\"",
+      "project": "Single"
+    },
+    {
+      "question": "Why are Wolfgang and LiHua going to the local music store?",
+      "ground_truth": "check out some new gear and get inspired for our next jam session",
+      "project": "Single"
+    },
+    {
+      "question": "What is the main theme of game group's discussion on 20260901_13:00?",
+      "ground_truth": "Dutch van der Linde's character and leadership",
+      "project": "Single"
+    },
+    {
+      "question": "Who is the most hateable character in Game of Thrones in Orion's opinion?",
+      "ground_truth": "Ramsay Bolton",
+      "project": "Single"
+    },
+    {
+      "question": "Who is the most hateable character in Game of Thrones in Merrick's opinion?",
+      "ground_truth": "Cersei Lannister",
+      "project": "Single"
+    },
+    {
+      "question": "What is the common interest between Li Hua and Jake Watson?",
+      "ground_truth": "Soccer",
+      "project": "Single"
+    },
+    {
+      "question": "What kind of songs are Li Hua and Chae Song-hwa considering adding to their playlist for babies?",
+      "ground_truth": "Lullabies",
+      "project": "Single"
+    },
+    {
+      "question": "What makes Wolfgang feel under a lot of pressure according to his conversation with LiHua on 20260905?",
+      "ground_truth": "this new software project",
+      "project": "Single"
+    },
+    {
+      "question": "Why does AdamSmith ask LiHua about the basement on 20260907?",
+      "ground_truth": "check in and see how the basement held up after the storm",
+      "project": "Single"
+    },
+    {
+      "question": "How is the basement after the storm?",
+      "ground_truth": "The basement is all good no water leakage at all",
+      "project": "Single"
+    },
+    {
+      "question": "What is the latest good news from Wolfgang as of 20260908?",
+      "ground_truth": "software project finally made some significant progress",
+      "project": "Single"
+    },
+    {
+      "question": "What new songs are LiHua working on lately on his guitar as of 20260908?",
+      "ground_truth": "Blackbird and \"Hotel California\"",
+      "project": "Single"
+    },
+    {
+      "question": "What mission does Gavriel mention that shows Arthur's growth in the game?",
+      "ground_truth": "the scene where Arthur tells John to take care of his family",
+      "project": "Single"
+    },
+    {
+      "question": "What does Aisling find emotionally impactful about Red Dead Redemption 2's ending?",
+      "ground_truth": "Arthur's realization of his fate and the music during the last ride",
+      "project": "Single"
+    },
+    {
+      "question": "What side mission in Red Dead Redemption 2 resonated with Jareth?",
+      "ground_truth": "the side mission with the widow in the honor system",
+      "project": "Single"
+    },
+    {
+      "question": "What was ThaneChambers' favorite horse-related side quest in Red Dead Redemption 2?",
+      "ground_truth": "the “troubled” horse",
+      "project": "Single"
+    },
+    {
+      "question": "What funny glitch did Fionnuala experience in the game Red Dead Redemption 2?",
+      "ground_truth": "Arthur ended up floating in mid-air after a cutscene",
+      "project": "Single"
+    },
+    {
+      "question": "What was the final showdown that Elara found unforgettable in Red Dead Redemption 2?",
+      "ground_truth": "with Dutch and Micah",
+      "project": "Single"
+    },
+    {
+      "question": "How does Bronwyn describe the epilogue of the game Red Dead Redemption 2?",
+      "ground_truth": "captivating after seeing John try to make a life for himself",
+      "project": "Single"
+    },
+    {
+      "question": "Has LiHua ever met anyone like Shedlon Cooper in his real life?",
+      "ground_truth": "No",
+      "project": "Single"
+    },
+    {
+      "question": "Has EmilyBurnett ever met anyone like Shedlon Cooper in her real life?",
+      "ground_truth": "No",
+      "project": "Single"
+    },
+    {
+      "question": "What games are LiHua and ThaneChambers planning to check out during their shopping trip according to their discussion on 20260911?",
+      "ground_truth": "Spider-Man: Miles Morales and \"Demon's Souls\"",
+      "project": "Single"
+    },
+    {
+      "question": "Who is the best midfielder in the past decade in JakeWatson's opinion?",
+      "ground_truth": "Luka Modrić",
+      "project": "Single"
+    },
+    {
+      "question": "How many servings of vegetables should LiHua aim for each day to keep body in good shape according to Jennifer?",
+      "ground_truth": "at least 5 servings of veggies a day",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua ask Jake about soccer?",
+      "ground_truth": "the best strategies for soccer players to avoid injuries during games",
+      "project": "Single"
+    },
+    {
+      "question": "What is Jake's first tip for avoiding soccer injuries?",
+      "ground_truth": "proper warm-up and stretching",
+      "project": "Single"
+    },
+    {
+      "question": "What does Jake suggest to improve flexibility and prevent muscle issues?",
+      "ground_truth": "staying hydrated",
+      "project": "Single"
+    },
+    {
+      "question": "Why is wearing the right footwear important in soccer?",
+      "ground_truth": "to avoid slips or sprains",
+      "project": "Single"
+    },
+    {
+      "question": "How does strength training help prevent soccer injuries?",
+      "ground_truth": "It builds muscles around joints & reduces injury risk & improves stability and endurance",
+      "project": "Single"
+    },
+    {
+      "question": "What type of exercises does Jake recommend for strength training?",
+      "ground_truth": "squats & lunges & planks & balance exercises like single-leg stands",
+      "project": "Single"
+    },
+    {
+      "question": "What is the purpose of starting with bodyweight exercises?",
+      "ground_truth": "for those who are new to strength training",
+      "project": "Single"
+    },
+    {
+      "question": "Who does EmilyBurnett think is a standout character in the Game of Thrones series?",
+      "ground_truth": "Tyrion Lannister",
+      "project": "Single"
+    },
+    {
+      "question": "What does Lachlan appreciate about Arya Stark's character development?",
+      "ground_truth": "Her transition from an innocent girl to a fierce assassin",
+      "project": "Single"
+    },
+    {
+      "question": "What moment does Rowan find mind-blowing in Arya's storyline?",
+      "ground_truth": "When Arya confronts and takes down the Night King",
+      "project": "Single"
+    },
+    {
+      "question": "Which moment involving Tyrion is Merrick's favorite?",
+      "ground_truth": "When Tyrion blows up the Wildfire to save King's Landing",
+      "project": "Single"
+    },
+    {
+      "question": "What memorable quote is mentioned by Phaedra?",
+      "ground_truth": "Jon Snow's \"You know nothing\" scene with Ygritte",
+      "project": "Single"
+    },
+    {
+      "question": "What does Rowan love about Tyrion's \"I drink and I know things\" line?",
+      "ground_truth": "It captures his cleverness",
+      "project": "Single"
+    },
+    {
+      "question": "What aspect of Jaime Lannister's storyline does Rowan find intriguing?",
+      "ground_truth": "His transformation after meeting Brienne of Tarth",
+      "project": "Single"
+    },
+    {
+      "question": "How does Phaedra view Jaime's character arc?",
+      "ground_truth": "Fascinating as he goes from \"Kingslayer\" to someone who values honor",
+      "project": "Single"
+    },
+    {
+      "question": "What does Lachlan think about Jaime's final decision to protect Cersei?",
+      "ground_truth": "It complicates his redemption and leaves mixed feelings",
+      "project": "Single"
+    },
+    {
+      "question": "How does Saffron feel about Jaime's choice to protect Cersei?",
+      "ground_truth": "Conflicted because it seems like he was slipping back into old ways",
+      "project": "Single"
+    },
+    {
+      "question": "What does Kieran wish Jaime had done differently?",
+      "ground_truth": "Chosen a different path after his character development",
+      "project": "Single"
+    },
+    {
+      "question": "How does Niamh think Jaime could've ended up differently?",
+      "ground_truth": "By staying true to the lessons he learned from Brienne",
+      "project": "Single"
+    },
+    {
+      "question": "What could Jaime and Brienne have done to rebuild trust according to Merrick?",
+      "ground_truth": "Worked on rebuilding trust through actions rather than just words",
+      "project": "Single"
+    },
+    {
+      "question": "What is LiHua curious about regarding the \"Man in Black\" in Westworld?",
+      "ground_truth": "The motive behind his character",
+      "project": "Single"
+    },
+    {
+      "question": "What does EmilyBurnett think is the main motive for the \"Man in Black\"?",
+      "ground_truth": "To find deeper meaning and fulfillment in Westworld\t20260916_16:00",
+      "project": "Single"
+    },
+    {
+      "question": "How does LiHua feel about the \"Man in Black's\" search for meaning?",
+      "ground_truth": "Intrigued as it adds depth to the story",
+      "project": "Single"
+    },
+    {
+      "question": "What is EmilyBurnett's favorite moment of the \"Man in Black\"?",
+      "ground_truth": "When he confronts the truth about himself and his choices",
+      "project": "Single"
+    },
+    {
+      "question": "Which moment does LiHua find memorable for the \"Man in Black\"?",
+      "ground_truth": "When he shows vulnerability",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua think about the themes of Westworld?",
+      "ground_truth": "They are thought-provoking by diving into consciousness and free will and what it means to be human",
+      "project": "Single"
+    },
+    {
+      "question": "Which theme of Westworld resonates the most for LiHua?",
+      "ground_truth": "The exploration of free will and choice",
+      "project": "Single"
+    },
+    {
+      "question": "What does EmilyBurnett think about the future relevance of Westworld's themes?",
+      "ground_truth": "They will become even more crucial as technology advances",
+      "project": "Single"
+    },
+    {
+      "question": "What does WolfgangSchulz suggest incorporating into practice sessions according to the discussion on 20260916?",
+      "ground_truth": "Improvisational solos",
+      "project": "Single"
+    },
+    {
+      "question": "How does LiHua feel about the idea of improvisation based on the chat on 20260916?",
+      "ground_truth": "It will make sessions more fun and creative",
+      "project": "Single"
+    },
+    {
+      "question": "Who does JakeWatson consider the best defender in the history of FC Barcelona?",
+      "ground_truth": "Carles Puyol",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua think about Gerard Piqué as a defender?",
+      "ground_truth": "He deserves a mention for his skill and intelligence",
+      "project": "Single"
+    },
+    {
+      "question": "Who are JakeWatson's and LiHua's favorite defenders?",
+      "ground_truth": "Carles Puyol and Gerard Piqué",
+      "project": "Single"
+    },
+    {
+      "question": "What is JakeWatson's favorite memory of Puyol and Piqué playing together?",
+      "ground_truth": "The comeback against PSG in the Champions League",
+      "project": "Single"
+    },
+    {
+      "question": "What match does JakeWatson cherish from the Champions League final against Manchester United?",
+      "ground_truth": "The 2009 final",
+      "project": "Single"
+    },
+    {
+      "question": "What is LiHua's favorite match involving Barcelona?",
+      "ground_truth": "The 2013 Champions League match against AC Milan",
+      "project": "Single"
+    },
+    {
+      "question": "Which goal does JakeWatson never forget from Messi?",
+      "ground_truth": "Messi's solo goal against Getafe in 2007",
+      "project": "Single"
+    },
+    {
+      "question": "What is LiHua's favorite player moment from Messi?",
+      "ground_truth": "When Messi scored a header against Manchester United in 2011",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua think makes Messi the best?",
+      "ground_truth": "His ability to create chances as well as his vision and work ethic and humility",
+      "project": "Single"
+    },
+    {
+      "question": "How does JakeWatson view Messi's impact on future generations of players?",
+      "ground_truth": "His dedication and consistency set the bar high for young players",
+      "project": "Single"
+    },
+    {
+      "question": "Who suggests hitting Starbucks after work on 20260918?",
+      "ground_truth": "WolfgangSchulz",
+      "project": "Single"
+    },
+    {
+      "question": "What is JenniferMoore's reminder to LiHua about on 20260919?",
+      "ground_truth": "Getting enough protein after workouts",
+      "project": "Single"
+    },
+    {
+      "question": "Why is protein important according to JenniferMoore?",
+      "ground_truth": "For keeping the body in shape",
+      "project": "Single"
+    },
+    {
+      "question": "What is ThaneChambers' question to LiHua on 20260920?",
+      "ground_truth": "LiHua's favorite first-person shooter game",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does LiHua mention he's been playing on 20260920?",
+      "ground_truth": "Call of Duty: Warzone",
+      "project": "Single"
+    },
+    {
+      "question": "What does ThaneChambers say about \"Warzone\"?",
+      "ground_truth": "It's a blast",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua like most about \"Warzone\"?",
+      "ground_truth": "The strategy involved and the adrenaline rush",
+      "project": "Single"
+    },
+    {
+      "question": "What is ThaneChambers' memorable \"Warzone\" experience?",
+      "ground_truth": "Coming back from a tough spot to win at the last second",
+      "project": "Single"
+    },
+    {
+      "question": "What was LiHua's unforgettable match in \"Warzone\"?",
+      "ground_truth": "Being down to the last two and outsmarting the last team",
+      "project": "Single"
+    },
+    {
+      "question": "How does ThaneChambers feel about upcoming \"Warzone\" updates?",
+      "ground_truth": "He's looking forward to them",
+      "project": "Single"
+    },
+    {
+      "question": "Does LiHua plan to play \"Warzone\" after the updates?",
+      "ground_truth": "Yes because he loves exploring fresh content",
+      "project": "Single"
+    },
+    {
+      "question": "What does ThaneChambers propose to do with the \"Warzone\" updates?",
+      "ground_truth": "Hop on together and tackle the new stuff",
+      "project": "Single"
+    },
+    {
+      "question": "Who initiated the discussion about the community garden renovation and its benefits to local businesses?",
+      "ground_truth": "Turalyon",
+      "project": "Single"
+    },
+    {
+      "question": "What idea did IllidanStormrage propose to help involve the community in supporting local businesses?",
+      "ground_truth": "Putting together a flyer with a list of local businesses",
+      "project": "Single"
+    },
+    {
+      "question": "How does GromHellscream believe the local shops will benefit from the completed garden?",
+      "ground_truth": "More foot traffic means more customers for them",
+      "project": "Single"
+    },
+    {
+      "question": "What does ArthasMenethil describe the outcome of the garden project and supporting local vendors as?",
+      "ground_truth": "A win-win",
+      "project": "Single"
+    },
+    {
+      "question": "What does Thrall suggest they create to support local businesses?",
+      "ground_truth": "A list of businesses they love to support",
+      "project": "Single"
+    },
+    {
+      "question": "How does TirionFordring emphasize the importance of balancing the garden renovation with supporting local vendors?",
+      "ground_truth": "By stating that both aspects are important for the best outcome",
+      "project": "Single"
+    },
+    {
+      "question": "What does AdamSmith agree is crucial to align with the garden project schedule?",
+      "ground_truth": "Support for local businesses",
+      "project": "Single"
+    },
+    {
+      "question": "Who does LiHua ask for help with installing a curtain?",
+      "ground_truth": "AdamSmith",
+      "project": "Single"
+    },
+    {
+      "question": "When does AdamSmith say he is available to help with the curtain installation?",
+      "ground_truth": "Wednesday or Thursday afternoon",
+      "project": "Single"
+    },
+    {
+      "question": "On which day do LiHua and AdamSmith agree to install the curtain?",
+      "ground_truth": "Thursday afternoon",
+      "project": "Single"
+    },
+    {
+      "question": "Who will bring the tools for the curtain installation?",
+      "ground_truth": "AdamSmith",
+      "project": "Single"
+    },
+    {
+      "question": "Who suggests exploring the PS5 settings for accessibility features and Game Help?",
+      "ground_truth": "ThaneChambers",
+      "project": "Single"
+    },
+    {
+      "question": "What feature on the PS5 does Ileana praise for making switching between games smoother?",
+      "ground_truth": "Control Center",
+      "project": "Single"
+    },
+    {
+      "question": "How does Fionnuala describe the convenience of the Control Center's audio settings adjustment?",
+      "ground_truth": "You can adjust audio settings on the fly without having to pause the game",
+      "project": "Single"
+    },
+    {
+      "question": "What aspect does ThaneChambers enjoy about sharing clips on the PS5?",
+      "ground_truth": "It's a great way to relive intense moments with friends",
+      "project": "Single"
+    },
+    {
+      "question": "Which game is LiHua currently obsessed with for its graphics and storytelling?",
+      "ground_truth": "God of War",
+      "project": "Single"
+    },
+    {
+      "question": "What game is Helios currently playing and finds the world and gameplay mechanics stunning?",
+      "ground_truth": "Horizon Forbidden West",
+      "project": "Single"
+    },
+    {
+      "question": "How does Dyllan describe the combat in \"Horizon Forbidden West\"?",
+      "ground_truth": "It can be tricky sometimes",
+      "project": "Single"
+    },
+    {
+      "question": "What strategy does Helios recommend for dealing with flying machines in \"Horizon Forbidden West\"?",
+      "ground_truth": "Using a bow with elemental arrows and focus to track their movements",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does Helios suggest for tactical fun with a great story and character development?",
+      "ground_truth": "Fire Emblem",
+      "project": "Single"
+    },
+    {
+      "question": "What type of combat does Gavriel prefer in games?",
+      "ground_truth": "Turn-based combat",
+      "project": "Single"
+    },
+    {
+      "question": "What game has Gavriel been hooked on recently for its blend of RPG elements and social simulation?",
+      "ground_truth": "Persona 5 Royal",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does Dyllan recommend for turn-based combat and art style?",
+      "ground_truth": "Octopath Traveler",
+      "project": "Single"
+    },
+    {
+      "question": "Who is ThaneChambers' favorite character in \"Octopath Traveler\"?",
+      "ground_truth": "Primrose",
+      "project": "Single"
+    },
+    {
+      "question": "What is Aisling's opinion on using traps in \"Octopath Traveler\"?",
+      "ground_truth": "They are a game changer",
+      "project": "Single"
+    },
+    {
+      "question": "How does Dyllan describe the importance of a balanced party in \"Octopath Traveler\"?",
+      "ground_truth": "It allows for more flexibility in battles and helps adapt to different challenges",
+      "project": "Single"
+    },
+    {
+      "question": "What is Bronwyn's experience with going full support in tough fights in \"Octopath Traveler\"?",
+      "ground_truth": "It can be risky but totally viable",
+      "project": "Single"
+    },
+    {
+      "question": "Which boss did Gavriel struggle with the most in \"Octopath Traveler\"?",
+      "ground_truth": "The final boss",
+      "project": "Single"
+    },
+    {
+      "question": "What does Elara enjoy doing to unwind after intense battles in games?",
+      "ground_truth": "Wander around and collect items or side quests",
+      "project": "Single"
+    },
+    {
+      "question": "What type of gameplay does Jareth enjoy after a big challenge?",
+      "ground_truth": "Relaxing gameplay",
+      "project": "Single"
+    },
+    {
+      "question": "Who asks Emily if she has read The Lord of the Rings novels?",
+      "ground_truth": "LiHua",
+      "project": "Single"
+    },
+    {
+      "question": "What TV series does LiHua mention that they are curious about in relation to The Lord of the Rings?",
+      "ground_truth": "The Rings of Power",
+      "project": "Single"
+    },
+    {
+      "question": "What aspect of \"The Rings of Power\" does Emily appreciate in terms of visuals?",
+      "ground_truth": "How they are bringing Middle-earth to life",
+      "project": "Single"
+    },
+    {
+      "question": "Which character does LiHua mention as their favorite and describe as inspiring?",
+      "ground_truth": "Galadriel",
+      "project": "Single"
+    },
+    {
+      "question": "What aspect of Elrond's character does Emily appreciate?",
+      "ground_truth": "His mix of wisdom and vulnerability",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua predict will happen in \"The Rings of Power\"?",
+      "ground_truth": "Epic battles and alliances forming",
+      "project": "Single"
+    },
+    {
+      "question": "What does Emily think will happen next in the series in terms of story development?",
+      "ground_truth": "The stakes will rise and alliances will evolve",
+      "project": "Single"
+    },
+    {
+      "question": "What do LiHua and Emily agree on regarding the anticipation for the next episode?",
+      "ground_truth": "They both can't wait for the next episode",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua suggest they should do as the series unfolds?",
+      "ground_truth": "Keep sharing their thoughts",
+      "project": "Single"
+    },
+    {
+      "question": "What does Emily say about the series making her feel like she is really getting to know the characters?",
+      "ground_truth": "The emphasis on character development and their backstories",
+      "project": "Single"
+    },
+    {
+      "question": "Who initiates the suggestion to go to the grocery store after work on 20260923?",
+      "ground_truth": "WolfgangSchulz",
+      "project": "Single"
+    },
+    {
+      "question": "What is the purpose of going to the grocery store on 20260923 according to WolfgangSchulz?",
+      "ground_truth": "To grab some snacks for their next jam",
+      "project": "Single"
+    },
+    {
+      "question": "What time does WolfgangSchulz propose for going to the grocery store on 20260923?",
+      "ground_truth": "Around 5:30",
+      "project": "Single"
+    },
+    {
+      "question": "How does LiHua feel about the bench press challenge proposed by JenniferMoore?",
+      "ground_truth": "LiHua feels pretty strong and is up for the challenge",
+      "project": "Single"
+    },
+    {
+      "question": "What exercises does JakeWatson recommend for leg strength?",
+      "ground_truth": "Squats and lunges",
+      "project": "Single"
+    },
+    {
+      "question": "What additional advice does JakeWatson give for maintaining muscle flexibility?",
+      "ground_truth": "Stretch after workouts",
+      "project": "Single"
+    },
+    {
+      "question": "Which stretches does JakeWatson recommend for soccer-specific areas?",
+      "ground_truth": "Hamstring stretch and quad stretch",
+      "project": "Single"
+    },
+    {
+      "question": "How long should each stretch be held according to JakeWatson?",
+      "ground_truth": "About 30 seconds",
+      "project": "Single"
+    },
+    {
+      "question": "When and where does JakeWatson propose to meet for the practice session according to the conversation on 20260925?",
+      "ground_truth": "Saturday at 4 PM at the usual spot",
+      "project": "Single"
+    },
+    {
+      "question": "What is LiHua's response to the suggestion of taking a warm shower before bed?",
+      "ground_truth": "LiHua plans to try it tonight",
+      "project": "Single"
+    },
+    {
+      "question": "Who asks LiHua to measure the window in the basement?",
+      "ground_truth": "AdamSmith",
+      "project": "Single"
+    },
+    {
+      "question": "Why does AdamSmith want the window measured?",
+      "ground_truth": "To get some curtains made",
+      "project": "Single"
+    },
+    {
+      "question": "What are the dimensions of the window that LiHua measures?",
+      "ground_truth": "150 cm wide and 120 cm high",
+      "project": "Single"
+    },
+    {
+      "question": "Who initiates the discussion about binaural tones?",
+      "ground_truth": "ChaeSong-hwa",
+      "project": "Single"
+    },
+    {
+      "question": "What does ChaeSong-hwa suggest binaural tones could enhance?",
+      "ground_truth": "The sound and listening experience for their audience",
+      "project": "Single"
+    },
+    {
+      "question": "How does YurikoYamamoto feel about adding a new dimension to their music with binaural tones?",
+      "ground_truth": "Excited to give it a try",
+      "project": "Single"
+    },
+    {
+      "question": "Who congratulates LiHua on pushing their limits with the bench press?",
+      "ground_truth": "JenniferMoore",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua express feeling after the encouragement from Jennifer?",
+      "ground_truth": "Strong and motivated",
+      "project": "Single"
+    },
+    {
+      "question": "What is the focus for the next session suggested by JenniferMoore on 20260930?",
+      "ground_truth": "Form and control",
+      "project": "Single"
+    },
+    {
+      "question": "What technique does JenniferMoore suggest to gradually increase weight of the bench press exercise?",
+      "ground_truth": "Progressive overload",
+      "project": "Single"
+    },
+    {
+      "question": "Who suggests going out for hot pot?",
+      "ground_truth": "LiHua",
+      "project": "Single"
+    },
+    {
+      "question": "What type of hot pot does WolfgangSchulz prefer?",
+      "ground_truth": "Sichuan",
+      "project": "Single"
+    },
+    {
+      "question": "What time does LiHua propose for dinner on 20260930?",
+      "ground_truth": "7 pm",
+      "project": "Single"
+    },
+    {
+      "question": "Who comes up with the idea of picking up drinks on the way to hot pot?",
+      "ground_truth": "LiHua",
+      "project": "Single"
+    },
+    {
+      "question": "What type of drink does LiHua suggest to have with hot pot?",
+      "ground_truth": "Cold beer",
+      "project": "Single"
+    },
+    {
+      "question": "Who reminds everyone to drink water before and during the match?",
+      "ground_truth": "JakeWatson",
+      "project": "Single"
+    },
+    {
+      "question": "What does Ivor do the day before a game to help with hydration?",
+      "ground_truth": "Hydrate well",
+      "project": "Single"
+    },
+    {
+      "question": "What drink does JakeWatson recommend for hydration after a match?",
+      "ground_truth": "Coconut water",
+      "project": "Single"
+    },
+    {
+      "question": "What does Giselle emphasize about passing drills?",
+      "ground_truth": "Accuracy is key in games",
+      "project": "Single"
+    },
+    {
+      "question": "What practice idea does Dacey suggest to improve passing skills?",
+      "ground_truth": "Target practice with cones",
+      "project": "Single"
+    },
+    {
+      "question": "What does Briar remind everyone to bring to practice?",
+      "ground_truth": "Water bottles",
+      "project": "Single"
+    },
+    {
+      "question": "What does Giselle remind everyone to do before practice?",
+      "ground_truth": "Stretch",
+      "project": "Single"
+    },
+    {
+      "question": "Who is considering buying Sekiro: Shadows Die Twice and asks for ThaneChambers' opinion?",
+      "ground_truth": "LiHua",
+      "project": "Single"
+    },
+    {
+      "question": "What does ThaneChambers think about Sekiro: Shadows Die Twice?",
+      "ground_truth": "It's amazing and worth grabbing",
+      "project": "Single"
+    },
+    {
+      "question": "What aspects of Sekiro: Shadows Die Twice does ThaneChambers highlight?",
+      "ground_truth": "Unique combat system & timing & strategy & world design",
+      "project": "Single"
+    },
+    {
+      "question": "Does ThaneChambers recommend Sekiro: Shadows Die Twice to those who love a challenge?",
+      "ground_truth": "Yes",
+      "project": "Single"
+    },
+    {
+      "question": "What game is ThaneChambers currently playing?",
+      "ground_truth": "Black Myth: Wukong",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua think about the graphics and gameplay of Black Myth: Wukong?",
+      "ground_truth": "The graphics look insane and the gameplay seems really fluid",
+      "project": "Single"
+    },
+    {
+      "question": "What part of Black Myth: Wukong does ThaneChambers like the most?",
+      "ground_truth": "The fresh take on the classic tale and the unique combat mechanics",
+      "project": "Single"
+    },
+    {
+      "question": "Which aspect of Black Myth: Wukong does LiHua find immersive?",
+      "ground_truth": "The combat style and how it blends with the storyline",
+      "project": "Single"
+    },
+    {
+      "question": "What does ThaneChambers love about the boss battles in Black Myth: Wukong?",
+      "ground_truth": "The thrill of strategizing how to take them down and the breathtaking scenery",
+      "project": "Single"
+    },
+    {
+      "question": "Who informs LiHua that the new software is almost done?",
+      "ground_truth": "WolfgangSchulz",
+      "project": "Single"
+    },
+    {
+      "question": "What is LiHua's reaction to the news about the new software?",
+      "ground_truth": "LiHua is excited to check it out",
+      "project": "Single"
+    },
+    {
+      "question": "Who asks Jake to play as the goalkeeper for soccer training?",
+      "ground_truth": "LiHua",
+      "project": "Single"
+    },
+    {
+      "question": "Does Jake agree to play as the goalkeeper?",
+      "ground_truth": "Yes",
+      "project": "Single"
+    },
+    {
+      "question": "Who discusses classic matches between Barca and Bayern with Jake?",
+      "ground_truth": "LiHua",
+      "project": "Single"
+    },
+    {
+      "question": "In which year did Barca lose 4-0 against Bayern as mentioned in the conversation?",
+      "ground_truth": "2013",
+      "project": "Single"
+    },
+    {
+      "question": "Which goal does Jake consider incredible from the 2015 match?",
+      "ground_truth": "Neymar's goal",
+      "project": "Single"
+    },
+    {
+      "question": "Who does Jake believe has the potential to be a game-changer for Barca?",
+      "ground_truth": "Pedri",
+      "project": "Single"
+    },
+    {
+      "question": "What is LiHua looking forward to in the upcoming matches?",
+      "ground_truth": "Seeing how Pedri and the team perform and if they can go far in the UCL",
+      "project": "Single"
+    },
+    {
+      "question": "What are Jake's go-to snacks for match days?",
+      "ground_truth": "Chips and dip & pizza",
+      "project": "Single"
+    },
+    {
+      "question": "What are LiHua's favorite snacks for the game?",
+      "ground_truth": "Nachos with cheese and spicy salsa",
+      "project": "Single"
+    },
+    {
+      "question": "Who does LiHua pick as the best football manager of all time?",
+      "ground_truth": "Pep Guardiola",
+      "project": "Single"
+    },
+    {
+      "question": "What aspect of Guardiola's career does JakeWatson admire?",
+      "ground_truth": "The transformation of the teams he's managed",
+      "project": "Single"
+    },
+    {
+      "question": "Which team's style of play does Farrah remember as \"Total football\"?",
+      "ground_truth": "Barcelona",
+      "project": "Single"
+    },
+    {
+      "question": "What playing style is associated with Guardiola's Barcelona team?",
+      "ground_truth": "Tiki-taka",
+      "project": "Single"
+    },
+    {
+      "question": "Which player's development under Guardiola does Jasper mention?",
+      "ground_truth": "Phil Foden",
+      "project": "Single"
+    },
+    {
+      "question": "What player's midfield importance does Aurora highlight?",
+      "ground_truth": "Rodri",
+      "project": "Single"
+    },
+    {
+      "question": "Who will bring cones for drills at the match?",
+      "ground_truth": "Farrah",
+      "project": "Single"
+    },
+    {
+      "question": "What type of passes does Briar suggest adding to the practice?",
+      "ground_truth": "Quick one-twos",
+      "project": "Single"
+    },
+    {
+      "question": "What will LiHua bring for everyone to enjoy after the match?",
+      "ground_truth": "Snacks",
+      "project": "Single"
+    },
+    {
+      "question": "Which match does Jasper mention that Manchester City played recently?",
+      "ground_truth": "Against Chelsea in the Premier League",
+      "project": "Single"
+    },
+    {
+      "question": "Who scored a stunner in the Manchester City vs. Chelsea match as mentioned in the conversation?",
+      "ground_truth": "Phil Foden",
+      "project": "Single"
+    },
+    {
+      "question": "What aspect of Rodri's performance does Henley praise?",
+      "ground_truth": "His interceptions and passing",
+      "project": "Single"
+    },
+    {
+      "question": "What does Farrah admire about Rodri's play?",
+      "ground_truth": "His ability to break up opposition plays and transition the ball",
+      "project": "Single"
+    },
+    {
+      "question": "Who checks in with LiHua about their arm muscles after the bench press session?",
+      "ground_truth": "JenniferMoore",
+      "project": "Single"
+    },
+    {
+      "question": "How does LiHua feel about the soreness in their arm muscles?",
+      "ground_truth": "It feels good and they are ready for the next session",
+      "project": "Single"
+    },
+    {
+      "question": "What snack does LiHua agree to bring for the movie?",
+      "ground_truth": "Chips",
+      "project": "Single"
+    },
+    {
+      "question": "What drinks does WolfgangSchulz want to have while watching the movie?",
+      "ground_truth": "Soda and juice",
+      "project": "Single"
+    },
+    {
+      "question": "Who will pick up the snacks and drinks on their way before the movie?",
+      "ground_truth": "LiHua",
+      "project": "Single"
+    },
+    {
+      "question": "Who initiated the discussion about Cersei's journey in Game of Thrones?",
+      "ground_truth": "EmilyBurnett",
+      "project": "Single"
+    },
+    {
+      "question": "How does Rowan describe Cersei's transformation throughout the series?",
+      "ground_truth": "From vulnerable to ruthless",
+      "project": "Single"
+    },
+    {
+      "question": "What significant event in Cersei's life does Saffron highlight as a turning point?",
+      "ground_truth": "Losing her kids",
+      "project": "Single"
+    },
+    {
+      "question": "Which character's dynamic with Cersei is mentioned as complicated?",
+      "ground_truth": "Jaime",
+      "project": "Single"
+    },
+    {
+      "question": "What does Lachlan find haunting about Cersei's end?",
+      "ground_truth": "How much she fought to hold onto her power",
+      "project": "Single"
+    },
+    {
+      "question": "What idea does Rowan say Cersei represents?",
+      "ground_truth": "Power comes at a cost",
+      "project": "Single"
+    },
+    {
+      "question": "What aspect of Cersei's character does Quillan say often shadows her vulnerability?",
+      "ground_truth": "Her desperation for control",
+      "project": "Single"
+    },
+    {
+      "question": "What relationship could have potentially changed Cersei's path according to Phaedra?",
+      "ground_truth": "Her relationship with Tyrion",
+      "project": "Single"
+    },
+    {
+      "question": "How does Kieran describe Tywin's influence on Cersei?",
+      "ground_truth": "He taught her ruthless methods",
+      "project": "Single"
+    },
+    {
+      "question": "What does Orion say about Cersei's mix of loyalty and fear towards Tywin?",
+      "ground_truth": "It was a mix of both",
+      "project": "Single"
+    },
+    {
+      "question": "What does Rowan say about Cersei's independence?",
+      "ground_truth": "It made her stronger but also more isolated",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua say Cersei's power came at the price of?",
+      "ground_truth": "Meaningful connections",
+      "project": "Single"
+    },
+    {
+      "question": "What relationship could have shown Cersei a different perspective on power according to Lachlan?",
+      "ground_truth": "Her relationship with Tyrion",
+      "project": "Single"
+    },
+    {
+      "question": "What does Tamara say Cersei's love led to?",
+      "ground_truth": "Her downfall",
+      "project": "Single"
+    },
+    {
+      "question": "What could have changed everything for Cersei if she had embraced it according to Tamara?",
+      "ground_truth": "Her family ties",
+      "project": "Single"
+    },
+    {
+      "question": "What does EmilyBurnett say Cersei's choices led to?",
+      "ground_truth": "Her isolation",
+      "project": "Single"
+    },
+    {
+      "question": "What does Quillan suggest could have been a game-changer for Cersei?",
+      "ground_truth": "Accepting Tyrion's advice",
+      "project": "Single"
+    },
+    {
+      "question": "What does Saffron say Cersei was blinded by?",
+      "ground_truth": "Her need for control",
+      "project": "Single"
+    },
+    {
+      "question": "Who initiates the discussion about game storytelling?",
+      "ground_truth": "ThaneChambers",
+      "project": "Single"
+    },
+    {
+      "question": "What game does ThaneChambers consider their top choice for storytelling?",
+      "ground_truth": "The Last of Us",
+      "project": "Single"
+    },
+    {
+      "question": "Which game's narrative does Bronwyn appreciate for its father-son dynamic?",
+      "ground_truth": "God of War",
+      "project": "Single"
+    },
+    {
+      "question": "What game does Gavriel mention for its characters and plot twists?",
+      "ground_truth": "Final Fantasy VII Remake",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does ThaneChambers recommend for its choice-based storytelling?",
+      "ground_truth": "Life is Strange",
+      "project": "Single"
+    },
+    {
+      "question": "What game does Elara mention for making her emotional?",
+      "ground_truth": "Bioshock Infinite",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does Jareth praise for its storytelling in side quests?",
+      "ground_truth": "The Witcher 3",
+      "project": "Single"
+    },
+    {
+      "question": "What game does Dyllan describe as epic for its samurai culture?",
+      "ground_truth": "Ghost of Tsushima",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does Helios call a masterpiece for making players feel connected to the characters?",
+      "ground_truth": "Red Dead Redemption 2",
+      "project": "Single"
+    },
+    {
+      "question": "What scene from \"Red Dead Redemption 2\" does Bronwyn mention as emotional?",
+      "ground_truth": "The scene with Arthur and John on the mountain",
+      "project": "Single"
+    },
+    {
+      "question": "What game does Ileana say made her question the morality of her actions?",
+      "ground_truth": "Red Dead Redemption 2",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does Caelum mention for encouraging emotional engagement with the narrative?",
+      "ground_truth": "Red Dead Redemption 2",
+      "project": "Single"
+    },
+    {
+      "question": "What game does Bronwyn say mixes daily life with deep story arcs?",
+      "ground_truth": "Persona 5",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does Ileana mention for its unique world and storytelling?",
+      "ground_truth": "Horizon Zero Dawn",
+      "project": "Single"
+    },
+    {
+      "question": "What game does LiHua mention for exploring themes of choice & consciousness & humanity?",
+      "ground_truth": "Detroit: Become Human",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does Dyllan say raised interesting questions and moral dilemmas?",
+      "ground_truth": "Detroit: Become Human",
+      "project": "Single"
+    },
+    {
+      "question": "What game does Dyllan recall for its intimate feel and dialogue?",
+      "ground_truth": "Firewatch",
+      "project": "Single"
+    },
+    {
+      "question": "Which game does LiHua mention for playing with various storytelling tropes?",
+      "ground_truth": "The Stanley Parable",
+      "project": "Single"
+    },
+    {
+      "question": "When did Li Hua receive the curtains?",
+      "ground_truth": "Yesterday (implied to be 20261011)",
+      "project": "Single"
+    },
+    {
+      "question": "What does Li Hua like about the curtains?",
+      "ground_truth": "the patterns",
+      "project": "Single"
+    },
+    {
+      "question": "Who offers to help with the installation of the curtains?",
+      "ground_truth": "AdamSmith",
+      "project": "Single"
+    },
+    {
+      "question": "What does Turalyon want to hear everyone's thoughts on?",
+      "ground_truth": "the new benches",
+      "project": "Single"
+    },
+    {
+      "question": "What does MuradinBronzebeard think about the cushions idea?",
+      "ground_truth": "It sounds like a nice idea",
+      "project": "Single"
+    },
+    {
+      "question": "What does MalfurionStormrage suggest for sunny days?",
+      "ground_truth": "umbrellas for shade",
+      "project": "Single"
+    },
+    {
+      "question": "Who proposes the idea of adding tables near the benches?",
+      "ground_truth": "RexxarRemar",
+      "project": "Single"
+    },
+    {
+      "question": "What does GromHellscream suggest to brighten the area in the evening?",
+      "ground_truth": "lanterns or string lights",
+      "project": "Single"
+    },
+    {
+      "question": "What type of lanterns does MalfurionStormrage recommend?",
+      "ground_truth": "solar-powered lanterns",
+      "project": "Single"
+    },
+    {
+      "question": "Who is excited to see how the garden evolves?",
+      "ground_truth": "Thrall",
+      "project": "Single"
+    },
+    {
+      "question": "What does Turalyon think about the suggestions?",
+      "ground_truth": "They are going to make the garden a fantastic community spot",
+      "project": "Single"
+    },
+    {
+      "question": "What does ChaeSong-hwa suggest for the garden once everything is set up?",
+      "ground_truth": "a little gathering",
+      "project": "Single"
+    },
+    {
+      "question": "What kind of activities does MalfurionStormrage suggest for the gathering?",
+      "ground_truth": "games for kids & flower planting workshops & good food",
+      "project": "Single"
+    },
+    {
+      "question": "Who offers to check with friends for live music performance?",
+      "ground_truth": "ArthasMenethil",
+      "project": "Single"
+    },
+    {
+      "question": "What does MuradinBronzebeard think about live music?",
+      "ground_truth": "It would really enhance the experience",
+      "project": "Single"
+    },
+    {
+      "question": "Who suggests doing a group purchase of the new games?",
+      "ground_truth": "ThaneChambers",
+      "project": "Single"
+    },
+    {
+      "question": "What does ThaneChambers think about the new games?",
+      "ground_truth": "excited and interested",
+      "project": "Single"
+    },
+    {
+      "question": "What feature are they hoping for in the new game?",
+      "ground_truth": "co-op missions and shared loot system",
+      "project": "Single"
+    },
+    {
+      "question": "What does Helios want to know about the game?",
+      "ground_truth": "whether it will feature crossplay",
+      "project": "Single"
+    },
+    {
+      "question": "What does Dyllan think about crossplay?",
+      "ground_truth": "it was awesome and makes playing together much easier",
+      "project": "Single"
+    },
+    {
+      "question": "What does Ileana think is essential for the new game?",
+      "ground_truth": "a robust matchmaking system",
+      "project": "Single"
+    },
+    {
+      "question": "What does Fionnuala think about matchmaking systems?",
+      "ground_truth": "they can make or break the experience",
+      "project": "Single"
+    },
+    {
+      "question": "What does Helios think would be awesome for character development?",
+      "ground_truth": "a deep skill tree or upgrade system",
+      "project": "Single"
+    },
+    {
+      "question": "What does Gavriel think about crafting systems?",
+      "ground_truth": "they offer a chance to create unique weapons and gear",
+      "project": "Single"
+    },
+    {
+      "question": "What does Elara think about resource management?",
+      "ground_truth": "it always makes it feel more immersive",
+      "project": "Single"
+    },
+    {
+      "question": "What does Fionnuala think about potions and temporary boosts?",
+      "ground_truth": "they are always helpful",
+      "project": "Single"
+    },
+    {
+      "question": "What does ThaneChambers think about stealth boosts?",
+      "ground_truth": "they add a whole new layer to gameplay",
+      "project": "Single"
+    },
+    {
+      "question": "What does Bronwyn think about the idea of stealth missions?",
+      "ground_truth": "it will be all about timing and communication",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua think about the potential for stealth in the game?",
+      "ground_truth": "it could lead to some really engaging and strategic gameplay",
+      "project": "Single"
+    },
+    {
+      "question": "What team does JakeWatson admire for their comebacks?",
+      "ground_truth": "Real Madrid",
+      "project": "Single"
+    },
+    {
+      "question": "What is one characteristic of Real Madrid that JakeWatson mentions?",
+      "ground_truth": "they thrive under pressure",
+      "project": "Single"
+    },
+    {
+      "question": "Which match does JakeWatson remember for Real Madrid's comeback?",
+      "ground_truth": "Champions League against Manchester City in 2022",
+      "project": "Single"
+    },
+    {
+      "question": "What was special about the match against Manchester City in 2022 according to the group discussion?",
+      "ground_truth": "Rodrygo's stoppage-time goal",
+      "project": "Single"
+    },
+    {
+      "question": "What does Aurora say about the atmosphere at the Bernabéu during tough games?",
+      "ground_truth": "It was electric",
+      "project": "Single"
+    },
+    {
+      "question": "What does Evangeline say about Real Madrid's history in the Champions League?",
+      "ground_truth": "They have a legendary history and a winning culture",
+      "project": "Single"
+    },
+    {
+      "question": "What does Briar think about Real Madrid's chances for the rest of the season?",
+      "ground_truth": "They have a solid chance to challenge for every title",
+      "project": "Single"
+    },
+    {
+      "question": "Who is Real Madrid's coach according to Ivor?",
+      "ground_truth": "Ancelotti",
+      "project": "Single"
+    },
+    {
+      "question": "What does Dacey propose to practice on Saturday?",
+      "ground_truth": "soccer shooting skills",
+      "project": "Single"
+    },
+    {
+      "question": "Where do they plan to meet for soccer practice?",
+      "ground_truth": "the local park",
+      "project": "Single"
+    },
+    {
+      "question": "What time do they plan to meet for soccer practice?",
+      "ground_truth": "3 PM",
+      "project": "Single"
+    },
+    {
+      "question": "Who offers to bring cones for the soccer practice?",
+      "ground_truth": "Aurora",
+      "project": "Single"
+    },
+    {
+      "question": "What else does Henley plan to work on during the practice?",
+      "ground_truth": "dribbling skills",
+      "project": "Single"
+    },
+    {
+      "question": "Who suggests getting pizza for dinner?",
+      "ground_truth": "WolfgangSchulz",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua want to know about WolfgangSchulz's pizza preference?",
+      "ground_truth": "his favorite place for pizza",
+      "project": "Single"
+    },
+    {
+      "question": "What new pizza place does WolfgangSchulz suggest?",
+      "ground_truth": "a new pizza place downtown",
+      "project": "Single"
+    },
+    {
+      "question": "What time do they agree to meet for pizza?",
+      "ground_truth": "around 7",
+      "project": "Single"
+    },
+    {
+      "question": "Who invites LiHua to taste a new bread recipe?",
+      "ground_truth": "HaileyJohnson",
+      "project": "Single"
+    },
+    {
+      "question": "What does HaileyJohnson want LiHua to taste?",
+      "ground_truth": "a new bread recipe",
+      "project": "Single"
+    },
+    {
+      "question": "What type of pizza does WolfgangSchulz prefer?",
+      "ground_truth": "margherita",
+      "project": "Single"
+    },
+    {
+      "question": "What pizza does LiHua like?",
+      "ground_truth": "pepperoni with extra cheese",
+      "project": "Single"
+    },
+    {
+      "question": "What drink does WolfgangSchulz usually have with his pizza?",
+      "ground_truth": "soda or craft beer",
+      "project": "Single"
+    },
+    {
+      "question": "What is LiHua's suggestion regarding pizza places?",
+      "ground_truth": "to check out the new downtown place",
+      "project": "Single"
+    },
+    {
+      "question": "What do LiHua and Wolfgang plan to do together according to their conversation on 20261017?",
+      "ground_truth": "plan a pizza night",
+      "project": "Single"
+    },
+    {
+      "question": "What songs does ChaeSong-hwa suggest starting with according to the discussion on 20261019?",
+      "ground_truth": "Sweet Home Alabama or \"Let It Be\"",
+      "project": "Single"
+    },
+    {
+      "question": "What type of songs does YurikoYamamoto want to try according to the discussion on 2026101?",
+      "ground_truth": "upbeat pop songs",
+      "project": "Single"
+    },
+    {
+      "question": "What songs does ChaeSong-hwa suggest adding to the mix according to the discussion on 2026101?",
+      "ground_truth": "Shallow or \"Shake It Off\"",
+      "project": "Single"
+    },
+    {
+      "question": "What does ChaeSong-hwa plan to bring to karaoke night?",
+      "ground_truth": "snacks",
+      "project": "Single"
+    },
+    {
+      "question": "What does WolfgangSchulz suggest the group do before the upcoming karaoke night?",
+      "ground_truth": "pick their songs",
+      "project": "Single"
+    },
+    {
+      "question": "How does LiHua feel about the upcoming karaoke night?",
+      "ground_truth": "excited and can't wait",
+      "project": "Single"
+    },
+    {
+      "question": "What does ChaeSong-hwa say about the karaoke night?",
+      "ground_truth": "it's going to be a blast",
+      "project": "Single"
+    },
+    {
+      "question": "What is the current status of the curtains according to LiHua?",
+      "ground_truth": "They are perfect and more than satisfies him",
+      "project": "Single"
+    },
+    {
+      "question": "What offer does AdamSmith extend to LiHua regarding the basement?",
+      "ground_truth": "It can be used for extra storage whenever LiHua is ready",
+      "project": "Single"
+    },
+    {
+      "question": "What game does ThaneChambers remember as LiHua's favorite?",
+      "ground_truth": "Black Myth: Wukong",
+      "project": "Single"
+    },
+    {
+      "question": "What aspect of \"Black Myth: Wukong\" does LiHua find the most impressive?",
+      "ground_truth": "the visuals",
+      "project": "Single"
+    },
+    {
+      "question": "What does ThaneChambers like about the game \"Black Myth: Wukong\"?",
+      "ground_truth": "the storytelling",
+      "project": "Single"
+    },
+    {
+      "question": "Who is LiHua's favorite character in the game \"Black Myth: Wukong\"?",
+      "ground_truth": "Wukong",
+      "project": "Single"
+    },
+    {
+      "question": "What memorable moment does LiHua share from the game \"Black Myth: Wukong\"?",
+      "ground_truth": "an amazing battle scene where he had to outsmart a giant enemy",
+      "project": "Single"
+    },
+    {
+      "question": "What memorable moment does ThaneChambers share from the game \"Black Myth: Wukong\"?",
+      "ground_truth": "a moment where he faced a tricky puzzle",
+      "project": "Single"
+    },
+    {
+      "question": "How does LiHua describe the balance of combat and puzzles in the game \"Black Myth: Wukong\"?",
+      "ground_truth": "It's refreshing to switch between action and thinking",
+      "project": "Single"
+    },
+    {
+      "question": "Does LiHua play the game solo or with friends?",
+      "ground_truth": "Both",
+      "project": "Single"
+    },
+    {
+      "question": "Would LiHua be interested in playing co-op with the group?",
+      "ground_truth": "Yes",
+      "project": "Single"
+    },
+    {
+      "question": "What TV series does EmilyBurnett remember LiHua likes?",
+      "ground_truth": "Chernobyl",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua appreciate about the series \"Chernobyl\"?",
+      "ground_truth": "the powerful storytelling and the cinematography",
+      "project": "Single"
+    },
+    {
+      "question": "What is EmilyBurnett's favorite TV show?",
+      "ground_truth": "Game of Thrones",
+      "project": "Single"
+    },
+    {
+      "question": "What memorable scene from \"Chernobyl\" does LiHua mention?",
+      "ground_truth": "the scene where they're trying to contain the radiation",
+      "project": "Single"
+    },
+    {
+      "question": "Who is LiHua's favorite actor in \"Chernobyl\"?",
+      "ground_truth": "Stellan Skarsgård as Boris Shcherbina",
+      "project": "Single"
+    },
+    {
+      "question": "What TV series is EmilyBurnett currently watching?",
+      "ground_truth": "The Last of Us",
+      "project": "Single"
+    },
+    {
+      "question": "What TV show does EmilyBurnett recommend LiHua to watch?",
+      "ground_truth": "The Last of Us",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua's plan about wathcing \"The Last of Us\"?",
+      "ground_truth": "binge it that weekend",
+      "project": "Single"
+    },
+    {
+      "question": "What does JenniferMoore congratulate LiHua for pn 20261022?",
+      "ground_truth": "for pushing his limits with the planks this week",
+      "project": "Single"
+    },
+    {
+      "question": "What does JakeWatson suggest for refueling after a soccer game?",
+      "ground_truth": "a snack with carbs and protein and staying hydrated",
+      "project": "Single"
+    },
+    {
+      "question": "What are LiHua's usual recovery snacks after a game?",
+      "ground_truth": "a protein shake and a fruit smoothie",
+      "project": "Single"
+    },
+    {
+      "question": "What event is the community organizing?",
+      "ground_truth": "a weekend picnic",
+      "project": "Single"
+    },
+    {
+      "question": "What is the purpose of the community picnic?",
+      "ground_truth": "to bring the community together and get to know each other better",
+      "project": "Single"
+    },
+    {
+      "question": "What type of food event did Turalyon suggest?",
+      "ground_truth": "a potluck",
+      "project": "Single"
+    },
+    {
+      "question": "What does RexxarRemar suggest for the community picnic atmosphere?",
+      "ground_truth": "organizing some music",
+      "project": "Single"
+    },
+    {
+      "question": "What does TirionFordring suggest bringing for seating?",
+      "ground_truth": "blankets or chairs",
+      "project": "Single"
+    },
+    {
+      "question": "What day did the community members decide on for the picnic?",
+      "ground_truth": "next Saturday",
+      "project": "Single"
+    },
+    {
+      "question": "What does RexxarRemar suggest for keeping everyone energized during the picnic?",
+      "ground_truth": "a mix of snacks and drinks",
+      "project": "Single"
+    },
+    {
+      "question": "What does RexxarRemar suggest to have available to keep everyone hydrated during the picnic?",
+      "ground_truth": "water and drinks",
+      "project": "Single"
+    },
+    {
+      "question": "What does IllidanStormrage say he will bring to keep everyone entertained during the picnic?",
+      "ground_truth": "some epic games",
+      "project": "Single"
+    },
+    {
+      "question": "What places in Europe does WolfgangSchulz remember as stunning in Europe?",
+      "ground_truth": "the fjords in Norway and the lavender fields in Provence",
+      "project": "Single"
+    },
+    {
+      "question": "What does WolfgangSchulz like about Prague?",
+      "ground_truth": "its architecture and the vibe of the old town",
+      "project": "Single"
+    },
+    {
+      "question": "What local dish did WolfgangSchulz try in Prague?",
+      "ground_truth": "goulash",
+      "project": "Single"
+    },
+    {
+      "question": "What is WolfgangSchulz's favorite risotto memory?",
+      "ground_truth": "having seafood risotto in Venice",
+      "project": "Single"
+    },
+    {
+      "question": "What is on WolfgangSchulz's list for a future trip?",
+      "ground_truth": "Italy",
+      "project": "Single"
+    },
+    {
+      "question": "What does WolfgangSchulz want to check out in Italy?",
+      "ground_truth": "Cinque Terre",
+      "project": "Single"
+    },
+    {
+      "question": "What does LiHua say about the seafood in Cinque Terre?",
+      "ground_truth": "it's supposed to be fresh and delicious",
+      "project": "Single"
+    },
+    {
+      "question": "What time will Li Hua and Wolfgang meet for breakfast on the morning of the 9th?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of equipment does Wolfgang Schulz use when he works out at the gym?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of exercise does Li Hua prefer to do at the gym, and what time does Wolfgang usually go to the gym?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of traditional games did Wolfgang Schulz play with Li Hua during the Lunar New Year celebration?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What did Li Hua eat for dinner on January 20, 2026?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific suggestions did Li Hua have regarding the construction schedule during the last community meeting?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What movie did Li Hua and Wolfgang decide to watch together on New Year's Eve 2026?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What dish did Li Hua order for dessert after having Sichuan hot pot with Wolfgang Schulz?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What were the specific requirements that the customers modified and how did Li Hua respond to each change?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What payment method did Li Hua use to purchase groceries from the store on April 15, 2026?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific diet did Li Hua follow to achieve his fitness results that Jennifer Moore recommended?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What alternative training sports does Li Hua consider besides the current routine mentioned in his conversation with Jennifer?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of diet is Li Hua following to support his training regimen and sleep schedule?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of protein shake does Li Hua prefer to drink before his workout sessions?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific brand of protein supplement does Jennifer recommend for Li Hua's weight loss journey?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific colors of paint does Li Hua plan to use for the basement walls after decorating with potted plants?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What color did Li Hua decide to paint the walls of the basement after completing the renovation?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific design features did Li Hua suggest for Yuriko's studio homepage during their meeting at \"Central Perk\"?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is the name of the concert that Wolfgang and Li Hua will attend on March 7th?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of cake does Li Hua plan to bring to the meeting with Yuriko to celebrate her studio's homepage redesign?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What color did Li Hua paint his house before the community garden renovation began?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific dietary changes did Li Hua implement in his training regimen as a result of Jennifer's advice on endurance and flexibility?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific feedback did Yuriko give to Li Hua about the demo website during their meeting at the cafe \"Central Perk\" on Thursday morning, and how did Li Hua respond to her comments?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is the exact reason for Li Hua's unexpected work meeting on Thursday?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What toppings did Hailey put on the bread for Li Hua's next delivery, and what is the name of the bakery she gets her bread from?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is the favorite type of music that Li Hua and Yuriko plan to play together?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What are the specific reasons why Li Hua prefers classical music over pop music in their discussions?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What song did Yuriko and Wolfgang decide to perform together after watching the drum tutorial?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of feedback did Li Hua provide to Chae regarding the community medical knowledge lecture, and what is Wolfgang's role in the band rehearsal?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is the name of the last song Wolfgang played using the new drum practice app?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What flavor of new bread products did Li Hua really enjoy at the bakery's anniversary event?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is the name of the song that Li Hua will sing at the karaoke on 20260425?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What flavor of cake did Hailey plan to bake for the bakery's anniversary celebration in February?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of dessert did Wolfgang plan to order for Li Hua during their dinner celebration?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What were Raze's personal reasons for becoming a fitness coach before discussing pull-up techniques?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What new species of flowers will be featured in the community garden renovation, according to the feedback provided by Li Hua during the progress reports?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific construction projects were discussed at the meeting between Turalyon and the residents regarding noise control?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is the amount of rent Li Hua owes to Adam Smith for the months of April and May?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What song did Li Hua perform at the local music festival in 2026?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is the name of the restaurant where Li Hua and Wolfgang had dinner on the night of June 9, 2026?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is the nutritional value of the new line of high-protein breads compared to traditional white bread?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific sleep techniques did Li Hua use to improve her study habits after reading the neuroscience article and discussing the warm shower with Chae?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of special dietary restrictions does Li Hua follow when preparing meals for his family?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is the total cost of the air conditioner installation, including labor and materials, if Li Hua had previously discussed a budget of $2,000 with a different contractor?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of fusion music does Wolfgang Schulz plan to create with Li Hua during their weekend trip to the music store?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of flowers were planted in the garden based on the residents' suggestions discussed by Turalyon?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of air-conditioner did Li Hua select for Adam's living room, and how does its temperature regulation compare to the one in the basement?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What were Li Hua's specific fitness goals and how did Jennifer's advice on nutrition influence them during his training for a marathon?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What are the sales figures for the PS5 exclusive games released in 2026 that Thane discussed with group members?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific techniques did Li Hua use to prepare for a marathon race that took place on September 1, 2026?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What food did Emily order for the group's discussion about Game of Thrones characters?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of protein supplements did Li Hua use after the workout on September 19, 2026?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What color was the curtain that Li Hua chose for his living room?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific measurements did Li Hua take for the window size before the installation of the curtain?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is Thane's favorite type of food that he enjoys while playing video games?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What were the specific details of the negotiation between Jake Watson and Li Hua regarding player transfers from FC Barcelona to FC Bayern Munich?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What was the final match score of the 2025 UEFA Champions League final?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What was the exact date and time when Cersei Lannister first met Jaime Lannister in the Game of Thrones series?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What type of dessert did Wolfgang plan to have with Li Hua after their hot pot dinner on a different day?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What did Jennifer say to Li Hua about their plan for a team swimming competition in December?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What strategy did Li Hua use to score a goal in the championship match against their rival team?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What is Li Hua's favorite type of exercise outside of pull-ups?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What time did Chae first suggest they visit the music festival in the morning?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What are the reasons behind Jennifer and Li Hua's decision to change their training routine for the following month?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    },
+    {
+      "question": "What specific gifts did Wolfgang buy for Li Hua during his trip to Hong Kong?",
+      "ground_truth": "Insufficient information",
+      "project": "Null"
+    }
+  ]
+}
